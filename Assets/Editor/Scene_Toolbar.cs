@@ -22,24 +22,12 @@ public static class SceneToolbar
             SaveScene();
             EditorSceneManager.OpenScene("Assets/Scenes/VR Test.unity");
         }
-        /*
-        if (GUILayout.Button("Test_Game", GUILayout.Width(80)))
-        {
-            SaveScene();
-            EditorSceneManager.OpenScene("Assets/Scenes/Single_Player.unity");
-        }
 
-        if (GUILayout.Button("Roles", GUILayout.Width(80)))
+        if (GUILayout.Button("VR Demo", GUILayout.Width(80)))
         {
             SaveScene();
-            EditorSceneManager.OpenScene("Assets/Scenes/Test_Game.unity");
+            EditorSceneManager.OpenScene("Assets/Samples/XR Interaction Toolkit/3.1.3/Starter Assets/DemoScene.unity");
         }
-
-        if (GUILayout.Button("Level_2", GUILayout.Width(80)))
-        {
-            SaveScene();
-            EditorSceneManager.OpenScene("Assets/Scenes/Level_2.unity");
-        }*/
     }
     static void OnPlayModeChanged(PlayModeStateChange state)
     {
