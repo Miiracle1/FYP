@@ -34,7 +34,7 @@ public static class SceneToolbar
         if (state == PlayModeStateChange.ExitingEditMode)
         {
             SaveScene();
-            EditorSceneManager.OpenScene("Assets/Scenes/Lobby.unity");
+            //EditorSceneManager.OpenScene("Assets/Scenes/Lobby.unity");
         }
     }
 
