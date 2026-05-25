@@ -28,6 +28,12 @@ public static class SceneToolbar
             SaveScene();
             EditorSceneManager.OpenScene("Assets/Samples/XR Interaction Toolkit/3.1.3/Starter Assets/DemoScene.unity");
         }
+
+        if (GUILayout.Button("Lobby", GUILayout.Width(80)))
+        {
+            SaveScene();
+            EditorSceneManager.OpenScene("Assets/Scenes/Lobby.unity");
+        }
     }
     static void OnPlayModeChanged(PlayModeStateChange state)
     {
