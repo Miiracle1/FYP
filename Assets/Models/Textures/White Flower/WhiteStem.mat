@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueFlower
+  m_Name: WhiteStem
   m_Shader: {fileID: -6465566751694194690, guid: 254e9a7ff3553f849a6234b41b3d0b06, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
