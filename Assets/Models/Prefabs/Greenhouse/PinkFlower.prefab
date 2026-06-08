@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4949268333691377740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.312977
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 41.32884
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.3157517
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.010144449
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8857933
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3399531
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e67dc2d4b15a17468f9a9275e037c2c, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: aea9b586be592e947ac205e4411c55c2, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
+      propertyPath: m_Name
+      value: PinkFlower
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0908d5fd447ee5a47af91ccdf78a1c34, type: 3}
