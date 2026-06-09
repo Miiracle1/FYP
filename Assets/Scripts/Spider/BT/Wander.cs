@@ -16,19 +16,29 @@ namespace Spider.BT
         public override void OnStart()
         {
             agent = GetComponent<NavMeshAgent>();
+            agent.isStopped = false;
 
-            if (agent.isStopped)
-                agent.isStopped = false;
             agent.SetDestination(targetPos.Value);
+
+            Debug.Log("sfgsdfsf" + targetPos);
         }
 
         public override TaskStatus OnUpdate()
         {
+            return TaskStatus.Success;
+
             if (agent.pathPending)
                 return TaskStatus.Running;
 
-            if (agent.remainingDistance <= agent.stoppingDistance)
+            Debug.Log("tyytry" + agent.stoppingDistance);
+            Debug.Log("remaining" + agent.remainingDistance);
+
+            if (!agent.pathPending && agent.remainingDistance <= 0.2f)
+            {
+                agent.isStopped = true;
+                agent.ResetPath();
                 return TaskStatus.Success;
+            }
 
             return TaskStatus.Running;
         }

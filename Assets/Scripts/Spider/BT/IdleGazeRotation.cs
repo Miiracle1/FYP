@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 namespace Spider.BT
 {
+    [TaskCategory("Spider")]
+    [TaskDescription("Rotates towards player if player look at agent")]
     public class IdleGazeRotation : Action
     {
         public float gazeAngle = 30f;
