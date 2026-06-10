@@ -35,7 +35,7 @@ public static class SceneToolbar
             EditorSceneManager.OpenScene("Assets/Scenes/Lobby.unity");
         }
 
-        if (GUILayout.Button("GreenHouse", GUILayout.Width(80)))
+        if (GUILayout.Button("GreenHouse", GUILayout.Width(85)))
         {
             SaveScene();
             EditorSceneManager.OpenScene("Assets/Scenes/GreenHouse.unity");
