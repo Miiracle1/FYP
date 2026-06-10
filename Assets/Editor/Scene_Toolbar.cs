@@ -34,6 +34,18 @@ public static class SceneToolbar
             SaveScene();
             EditorSceneManager.OpenScene("Assets/Scenes/Lobby.unity");
         }
+
+        if (GUILayout.Button("GreenHouse", GUILayout.Width(80)))
+        {
+            SaveScene();
+            EditorSceneManager.OpenScene("Assets/Scenes/GreenHouse.unity");
+        }
+
+        if (GUILayout.Button("Garage", GUILayout.Width(80)))
+        {
+            SaveScene();
+            EditorSceneManager.OpenScene("Assets/Scenes/Garage.unity");
+        }
     }
     static void OnPlayModeChanged(PlayModeStateChange state)
     {
