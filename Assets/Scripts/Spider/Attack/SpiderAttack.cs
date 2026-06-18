@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Attach on Attack animation attack key frame to initiate player take damage logic.
+/// Attach on Attack animation attack key frame or attack collider to initiate player take damage logic.
 /// </summary>
 public class SpiderAttack : MonoBehaviour
 {

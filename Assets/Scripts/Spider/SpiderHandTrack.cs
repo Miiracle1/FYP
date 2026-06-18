@@ -58,8 +58,6 @@ public partial class SpiderAI
         float leftDistance = Vector3.Distance(transform.position, leftHand.position);
         float rightDistance = Vector3.Distance(transform.position, rightHand.position);
 
-        float closestDistance = Mathf.Min(leftDistance, rightDistance);
-
         if (leftDistance < rightDistance)
         {
             nearestHand = leftHand;
