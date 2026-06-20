@@ -7,7 +7,7 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
 
-    [SerializeField] private AudioSource sfxPrefab;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -21,18 +21,14 @@ public class SFXManager : MonoBehaviour
     /// <param name="clip"></param>
     /// <param name="spawnTransform"></param>
     /// <param name="volume"></param>
-    public void PlaySfxClip(AudioClip clip, Transform spawnTransform, float volume)
+    public static void PlaySfxClip(AudioClip clip, Transform spawnTransform, float volume = 1f)
     {
-        var audioSource = Instantiate(sfxPrefab, spawnTransform.position, Quaternion.identity);
+        instance.audioSource.clip = clip;
 
-        audioSource.clip = clip;
+        instance.audioSource.volume = volume;
 
-        audioSource.volume = volume;
+        instance.audioSource.Play();
 
-        audioSource.Play();
-
-        float clipLength = audioSource.clip.length;
-
-        Destroy(audioSource.gameObject, clipLength);
+        float clipLength = instance.audioSource.clip.length;
     }
 }

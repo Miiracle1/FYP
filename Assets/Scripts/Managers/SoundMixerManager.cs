@@ -34,4 +34,9 @@ public class SoundMixerManager : MonoBehaviour
     {
         audioMixer.SetFloat("sfxVolume", Mathf.Log10(volume) * 20f);
     }
+
+    public void SetNarratorVolume(float volume)
+    {
+        audioMixer.SetFloat("narratorVolume", Mathf.Log10(volume) * 20f);
+    }
 }

@@ -9,13 +9,14 @@ public partial class SpiderAI
 
     private Transform leftHand;
     private Transform rightHand;
-    private Transform nearestHand { get; set; }
+    private Transform nearestHand;
 
     /// <summary>
     /// Get VR Hand Controller Reference, use in Start or Awake.
     /// </summary>
     private void GetHandReference()
     {
+        return;
         var xrOrigin = FindFirstObjectByType<XROrigin>();
 
         var camTransform = xrOrigin.Camera.transform;
@@ -32,7 +33,8 @@ public partial class SpiderAI
     /// Constantly check the hand distance. Put in Update.
     /// </summary>
     private void CheckHandDistance()
-    { 
+    {
+        if (leftHand == null || rightHand == null) return;
         float leftDistance = Vector3.Distance(transform.position, leftHand.position);
         float rightDistance = Vector3.Distance(transform.position, rightHand.position);
 

@@ -25,13 +25,19 @@ namespace Spider.BT
 
         public override TaskStatus OnUpdate()
         {
-            return TaskStatus.Success;
-
             if (agent.pathPending)
                 return TaskStatus.Running;
 
-            Debug.Log("tyytry" + agent.stoppingDistance);
-            Debug.Log("remaining" + agent.remainingDistance);
+            // Make sure agent almost reach to end of path to continue branch
+            if (agent.remainingDistance <= 0.1f)
+            {
+                //agent.isStopped = true;
+                //agent.ResetPath();
+                return TaskStatus.Success;
+            }
+
+            return TaskStatus.Running;
+
 
             if (!agent.pathPending && agent.remainingDistance <= 0.2f)
             {
