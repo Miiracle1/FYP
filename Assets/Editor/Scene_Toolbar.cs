@@ -17,10 +17,10 @@ public static class SceneToolbar
 
     static void DrawToolbar()
     {
-        if (GUILayout.Button("Test", GUILayout.Width(80)))
+        if (GUILayout.Button("BootStrap", GUILayout.Width(80)))
         {
             SaveScene();
-            EditorSceneManager.OpenScene("Assets/Scenes/VR Test.unity");
+            EditorSceneManager.OpenScene("Assets/Scenes/Bootstrap Scene.unity");
         }
 
         if (GUILayout.Button("VR Demo", GUILayout.Width(80)))
