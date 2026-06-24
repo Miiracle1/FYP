@@ -32,3 +32,14 @@ public enum GameStateEnums
     GameOver,
     Victory
 }
+
+/// <summary>
+/// Tracks hard mode game level
+/// </summary>
+public enum GameLevelEnums
+{ 
+    Level1,
+    Level2,
+    Level3,
+    Level4
+}
