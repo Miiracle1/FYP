@@ -1,3 +1,4 @@
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 /// <summary>
@@ -12,4 +13,6 @@ public static class GameProgressTracker
     public static GameStateEnums GameState { get; set; } = GameStateEnums.Lobby;
 
     public static PlayerStateEnums PlayerState { get; set; } = PlayerStateEnums.Alive;
+
+    public static bool LightsOn { get; set; } = false;
 }

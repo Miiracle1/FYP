@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Left_Controller
   - Right_Controller
+  - Spider
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - Interactable
   - Uninteractable
-  - 
+  - Spider
   - 
   - 
   - 

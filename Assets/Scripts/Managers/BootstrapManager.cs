@@ -8,6 +8,9 @@ public class BootstrapManager : MonoBehaviour
     private SceneEnums sceneEnums;
     private GameModeEnums gamemodeEnums;
 
+    /***************************************************************************************************************************************************************************************/
+    //Unity Methods
+
     private void Awake()
     {
         InitializeManagers();
@@ -37,6 +40,9 @@ public class BootstrapManager : MonoBehaviour
         }
             
     }
+
+    /***************************************************************************************************************************************************************************************/
+    //Private Methods
 
     private void InitializeManagers()
     {

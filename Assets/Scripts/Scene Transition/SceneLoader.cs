@@ -12,6 +12,9 @@ public class SceneLoader : MonoBehaviour
     public event Action onLoadingProgress; // event to raise gamemode loading
     public event Action onLoadingCompleted; // event to raise finish loading
 
+    /***************************************************************************************************************************************************************************************/
+    //Unity Methods
+
     private void Awake()
     {
         if (instance == null)
@@ -25,6 +28,9 @@ public class SceneLoader : MonoBehaviour
             return;
         }
     }
+
+    /***************************************************************************************************************************************************************************************/
+    //Methods
 
     public void LoadScene(string sceneName)
     { 

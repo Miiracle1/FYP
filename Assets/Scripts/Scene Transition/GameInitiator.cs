@@ -11,6 +11,8 @@ public class GameInitiator : MonoBehaviour
     [SerializeField] private GameObject fourthToLoad;
     [SerializeField] private GameObject fifthToLoad;
 
+    /***************************************************************************************************************************************************************************************/
+    //Unity Methods
 
     private IEnumerator Start()
     {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -13,12 +14,26 @@ public class FadeCanvas : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup;
     private Coroutine currentCoroutine;
 
+    public static event Action OnFinishFadeIn;
+    public static event Action OnFinishFadeOut;
+
+    /***************************************************************************************************************************************************************************************/
+    //Unity Methods
+
     private void Awake()
     {
         if (canvasGroup == null)
             canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.alpha = startVisible ? 1.0f : 0.0f;
     }
+
+    private void Start()
+    {
+        FadeOut();
+    }
+
+    /***************************************************************************************************************************************************************************************/
+    //Methods
 
     [ContextMenu("Test Fade In")]
     public void FadeIn()
@@ -33,7 +48,7 @@ public class FadeCanvas : MonoBehaviour
             StopCoroutine(currentCoroutine);
         }
 
-        currentCoroutine = StartCoroutine(FadeCoroutine(1f, duration));
+        currentCoroutine = StartCoroutine(FadeCoroutine(1f, duration, "fadeIn"));
     }
 
     [ContextMenu("Test Fade Out")]
@@ -49,10 +64,10 @@ public class FadeCanvas : MonoBehaviour
             StopCoroutine(currentCoroutine);
         }
 
-        currentCoroutine = StartCoroutine(FadeCoroutine(0f, duration));
+        currentCoroutine = StartCoroutine(FadeCoroutine(0f, duration, "fadeOut"));
     }
 
-    private IEnumerator FadeCoroutine(float targetAlpha, float duration)
+    private IEnumerator FadeCoroutine(float targetAlpha, float duration, string name)
     { 
         float startAlpha = canvasGroup.alpha;
         float time = 0f;
@@ -70,5 +85,10 @@ public class FadeCanvas : MonoBehaviour
 
         canvasGroup.alpha = targetAlpha;
         currentCoroutine = null;
+
+        if (name == "fadeIn")
+            OnFinishFadeIn?.Invoke();
+        else
+            OnFinishFadeOut?.Invoke();
     }
 }

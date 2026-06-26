@@ -6,7 +6,37 @@ using UnityEngine.Audio;
 /// </summary>
 public class SoundMixerManager : MonoBehaviour
 {
+    public static SoundMixerManager instance;
     [SerializeField] private AudioMixer audioMixer;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        { 
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey("MasterVolume"))
+            SetMasterVolume(PlayerPrefs.GetFloat("MasterVolume"));
+
+        if (PlayerPrefs.HasKey("MusicVolume"))
+            SetMasterVolume(PlayerPrefs.GetFloat("MusicVolume"));
+
+        if (PlayerPrefs.HasKey("SfxVolume"))
+            SetMasterVolume(PlayerPrefs.GetFloat("SfxVolume"));
+
+        if (PlayerPrefs.HasKey("NarratorVolume"))
+            SetMasterVolume(PlayerPrefs.GetFloat("NarratorVolume"));
+    }
 
     /// <summary>
     /// Set master volume to parameter level
@@ -15,6 +45,7 @@ public class SoundMixerManager : MonoBehaviour
     public void SetMasterVolume(float volume)
     {
         audioMixer.SetFloat("masterVolume", Mathf.Log10(volume) * 20f);
+        PlayerPrefs.SetFloat("MasterVolume", volume);
     }
 
     /// <summary>
@@ -24,6 +55,7 @@ public class SoundMixerManager : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         audioMixer.SetFloat("musicVolume", Mathf.Log10(volume) * 20f);
+        PlayerPrefs.SetFloat("MusicVolume", volume);
     }
 
     /// <summary>
@@ -33,10 +65,12 @@ public class SoundMixerManager : MonoBehaviour
     public void SetSFXVolume(float volume)
     {
         audioMixer.SetFloat("sfxVolume", Mathf.Log10(volume) * 20f);
+        PlayerPrefs.SetFloat("SfxVolume", volume);
     }
 
     public void SetNarratorVolume(float volume)
     {
         audioMixer.SetFloat("narratorVolume", Mathf.Log10(volume) * 20f);
+        PlayerPrefs.SetFloat("NarratorVolume", volume);
     }
 }
