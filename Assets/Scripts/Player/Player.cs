@@ -4,19 +4,10 @@ public partial class Player : MonoBehaviour
 {
     
 
-    private void Awake()
-    {
-        
-    }
 
     void Start()
     {
         InitializeHealth();
-    }
-
-    void Update()
-    {
-        
     }
 }
 

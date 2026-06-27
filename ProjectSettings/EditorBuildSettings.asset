@@ -5,14 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bootstrap Scene.unity
     guid: ffa626da22751e544a2be6a6d2b6ff44
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lobby.unity
     guid: 407fb18ae1919444281e6a9cefc6ff15
+  - enabled: 0
+    path: Assets/Scenes/Garage.unity
+    guid: 8d10930e6b36b2c459316a106bf69b01
+  - enabled: 1
+    path: Assets/Scenes/GreenHouse.unity
+    guid: aeecb2735e6a7bc4e8fee9f5f4a5d301
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: c4c47987dbf8a514b8bf925d7acab83e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: bde173366ad54fa4f9701f022b008c6a, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: bc34c6e38a46bb44cb3accfddd91107c, type: 2}
   m_UseUCBPForAssetBundles: 0

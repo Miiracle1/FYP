@@ -3,12 +3,21 @@ using UnityEngine;
 
 public class LobbyManager : MonoBehaviour
 {
+    public static LobbyManager instance;
     private SceneEnums nextScene;
 
     public event Action OnLobbyChanged; // action to notify subs when changed scene from lobby
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     private void Start()
     {
@@ -37,6 +46,11 @@ public class LobbyManager : MonoBehaviour
 
         if (fadeCanvas != null) 
             fadeCanvas.FadeIn();
+
+        if (PlayerPrefs.GetString("Tutorial") == "True")
+        {
+            //nextScene = SceneEnums.Garage;
+        }
 
         GameProgressTracker.Scene = nextScene;
         SceneLoader.instance.LoadScene("Bootstrap Scene");
