@@ -21,7 +21,7 @@ public enum GameModeEnums
 }
 
 /// <summary>
-/// Tracks game state
+/// Tracks phase1 state
 /// </summary>
 public enum GameStateEnums
 { 
@@ -34,7 +34,7 @@ public enum GameStateEnums
 }
 
 /// <summary>
-/// Tracks hard mode game level
+/// Tracks hard mode phase1 level
 /// </summary>
 public enum GameLevelEnums
 { 

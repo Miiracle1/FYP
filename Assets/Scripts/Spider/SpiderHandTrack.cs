@@ -30,7 +30,7 @@ public partial class SpiderAI
     }
     
     /// <summary>
-    /// Constantly check the hand distance. Put in Update.
+    /// Constantly check the hand interactionDistance. Put in Update.
     /// </summary>
     private void CheckHandDistance()
     {

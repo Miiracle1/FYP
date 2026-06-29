@@ -20,7 +20,7 @@ namespace BehaviorDesigner.Samples
         // will return success after the gold has been harvested
         public override TaskStatus OnUpdate()
         {
-            // let the game manager know about the gold harvested
+            // let the phase1 manager know about the gold harvested
             gameManager.harvest(harvester.GoldHarvested);
             // the harvester no longer has any gold
             harvester.GoldHarvested = 0;

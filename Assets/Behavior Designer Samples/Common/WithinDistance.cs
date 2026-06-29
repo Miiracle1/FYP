@@ -5,7 +5,7 @@ using Tooltip = BehaviorDesigner.Runtime.Tasks.TooltipAttribute;
 
 namespace BehaviorDesigner.Samples
 {
-    // Check to see if the any object within the targets array is within the distance specified
+    // Check to see if the any object within the targets array is within the interactionDistance specified
     [TaskCategory("Common")]
     public class WithinDistance : Conditional
     {
@@ -23,7 +23,7 @@ namespace BehaviorDesigner.Samples
 
         // true if we obtained the targets through the targetTag
         private bool dynamicTargets;
-        // distnace * distance, optimization so we don't have to take the square root
+        // distnace * interactionDistance, optimization so we don't have to take the square root
         private float sqrMagnitude;
 
         public override void OnAwake()
@@ -45,7 +45,7 @@ namespace BehaviorDesigner.Samples
             }
         }
 
-        // returns success if any object is within distance of the current object. Otherwise it will return failure
+        // returns success if any object is within interactionDistance of the current object. Otherwise it will return failure
         public override TaskStatus OnUpdate()
         {
             Vector3 direction;
@@ -68,7 +68,7 @@ namespace BehaviorDesigner.Samples
                     }
                 }
             }
-            // no targets are within distance. Return failure
+            // no targets are within interactionDistance. Return failure
             return TaskStatus.Failure;
         }
 
@@ -80,7 +80,7 @@ namespace BehaviorDesigner.Samples
             }
         }
 
-        // Draw the distance
+        // Draw the interactionDistance
         public override void OnDrawGizmos()
         {
 #if UNITY_EDITOR

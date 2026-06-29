@@ -62,6 +62,10 @@ public class GameManager : MonoBehaviour
             firstPanel.SetActive(true);
     }
 
+    /// <summary>
+    /// Put in UI panel 'Next' button.
+    /// Starts level sequence.
+    /// </summary>
     public void StartLevel()
     { 
         dynamicMoveProvider.enabled = true;

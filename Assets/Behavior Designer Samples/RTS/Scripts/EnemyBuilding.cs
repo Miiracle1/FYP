@@ -64,7 +64,7 @@ namespace BehaviorDesigner.Samples
                 behavior.DisableBehavior();
             }
 
-            // reset the game if specified
+            // reset the phase1 if specified
             if (resetOnDestruction) {
                 RTSGameManager.instance.reset();
             }

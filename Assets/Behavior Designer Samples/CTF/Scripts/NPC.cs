@@ -34,7 +34,7 @@ namespace BehaviorDesigner.Samples
             behaviors = GetComponents<Behavior>();
         }
 
-        // reset the NPC. reset can either come from running into an enemy or from resetting the game because of a flag capture
+        // reset the NPC. reset can either come from running into an enemy or from resetting the phase1 because of a flag capture
         public void reset(bool fromCollision)
         {
             // drop the flag if it currently has the flag
@@ -52,7 +52,7 @@ namespace BehaviorDesigner.Samples
             transform.rotation = startRotation;
 
             // restart the behaviors if resetting from a behavior. Don't reset if not coming from a behavior because the behaviors will be
-            // reset by the game manager
+            // reset by the phase1 manager
             if (fromCollision) {
                 for (int i = 0; i < behaviors.Length; ++i) {
                     var enemy = behaviors[i].GetVariable("Enemy") as SharedTransform;
