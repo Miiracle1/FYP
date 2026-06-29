@@ -24,7 +24,7 @@ namespace BehaviorDesigner.Samples
         // OnUpdate will return success in one frame after it has created the projectile
         public override TaskStatus OnUpdate()
         {
-            // create a new project whose parent is the current game object
+            // create a new project whose parent is the current phase1 object
             var spawnedProjectile = GameObject.Instantiate(projectilePrefab) as GameObject;
             spawnedProjectile.transform.position = transform.position;
             spawnedProjectile.transform.LookAt(target.Value);

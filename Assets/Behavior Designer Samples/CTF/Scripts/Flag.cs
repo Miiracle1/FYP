@@ -14,11 +14,11 @@ namespace BehaviorDesigner.Samples
             if ((npc = other.GetComponent<NPC>()) != null) {
                 // the colliding object must be a NPC on offense
                 if (npc.IsOffense) {
-                    // notify the game manager
+                    // notify the phase1 manager
                     if (CTFGameManager.instance.flagTaken()) {
-                        // the game manager says that it is ok to take the flag
+                        // the phase1 manager says that it is ok to take the flag
                         transform.parent = other.transform;
-                        // the game object taking the flag will have a NPC component, let that component know that it has the flag
+                        // the phase1 object taking the flag will have a NPC component, let that component know that it has the flag
                         other.GetComponent<NPC>().HasFlag = true;
                     }
                 }

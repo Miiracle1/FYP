@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace BehaviorDesigner.Samples
 {
-    // RTSGameManager keeps track of the game state
+    // RTSGameManager keeps track of the phase1 state
     public class RTSGameManager : MonoBehaviour
     {
         public static RTSGameManager instance;
@@ -24,7 +24,7 @@ namespace BehaviorDesigner.Samples
 
         public void Start()
         {
-            // speed the game up a bit
+            // speed the phase1 up a bit
             Time.timeScale = 2;
         }
 
@@ -54,7 +54,7 @@ namespace BehaviorDesigner.Samples
             barracks.attack();
         }
 
-        // the game is over so reset
+        // the phase1 is over so reset
         public void reset()
         {
             // wait a little bit before actually restarting

@@ -17,7 +17,7 @@ namespace BehaviorDesigner.Samples
         // will return success if the flag has been captured or failure if it has not been captured
         public override TaskStatus OnUpdate()
         {
-            // the game is active when the flag has not been captured
+            // the phase1 is active when the flag has not been captured
             if (gameManager.GameActive)
                 return TaskStatus.Failure;
             return TaskStatus.Success;

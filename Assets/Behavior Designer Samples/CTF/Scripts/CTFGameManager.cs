@@ -9,14 +9,14 @@ namespace BehaviorDesigner.Samples
     {
         public static CTFGameManager instance;
 
-        // the time that the offense NPCs will celebrate after the flag is captured before the game is reset
+        // the time that the offense NPCs will celebrate after the flag is captured before the phase1 is reset
         public float celebrationTime = 2.0f;
         // the parent transform of all of the NPCs
         public Transform NPCGroup;
         // the flag transform
         public Transform flag;
 
-        // true if the game is currently active
+        // true if the phase1 is currently active
         private bool gameActive = false;
         public bool GameActive { get { return gameActive; } }
         // Behaviors are grouped into two sections. The first set of behaviors contains all of the behaviors that should be running
@@ -30,7 +30,7 @@ namespace BehaviorDesigner.Samples
         // true if the flag is taken by an offensive unit
         private bool isFlagTaken = false;
         public bool IsFlagTaken { get { return isFlagTaken; } }
-        // the start flag position and rotation, used when the game resets
+        // the start flag position and rotation, used when the phase1 resets
         private Vector3 startFlagPosition;
         private Quaternion startFlagRotation;
         // a list of all NPC units
@@ -52,7 +52,7 @@ namespace BehaviorDesigner.Samples
             // cache for quick lookup
             behaviorManager = BehaviorManager.instance;
 
-            // speed the game up a bit
+            // speed the phase1 up a bit
             Time.timeScale = 2;
 
             // remember the starting position/rotation of the flag
@@ -74,7 +74,7 @@ namespace BehaviorDesigner.Samples
                 }
             }
 
-            // currently the flag is not taken and the game is active
+            // currently the flag is not taken and the phase1 is active
             activeGroup = 0;
             gameActive = true;
         }
@@ -128,7 +128,7 @@ namespace BehaviorDesigner.Samples
             isFlagTaken = false;
         }
 
-        // the flag has been captured. Reset the game
+        // the flag has been captured. Reset the phase1
         public void resetGame()
         {
             if (gameActive) {

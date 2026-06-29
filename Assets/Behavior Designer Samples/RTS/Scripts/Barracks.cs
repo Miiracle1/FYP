@@ -74,7 +74,7 @@ namespace BehaviorDesigner.Samples
             units.Remove(unit.gameObject);
         }
 
-        // reset the game back to the original state. Destroy all units and reinitialize the row variables
+        // reset the phase1 back to the original state. Destroy all units and reinitialize the row variables
         public void reset()
         {
             for (int i = units.Count - 1; i > -1; --i) {

@@ -45,7 +45,7 @@ namespace BehaviorDesigner.Samples
             float radius = viewMagnitude * Mathf.Sin(fieldOfViewAngle * Mathf.Deg2Rad);
             var oldColor = UnityEditor.Handles.color;
             UnityEditor.Handles.color = Color.yellow;
-            // draw a disk at the end of the sight distance.
+            // draw a disk at the end of the sight interactionDistance.
             UnityEditor.Handles.DrawWireDisc(transform.position + transform.forward * viewMagnitude, transform.forward, radius);
             // draw to lines to represent the left and right side of the line of sight
             UnityEditor.Handles.DrawLine(transform.position, transform.TransformPoint(new Vector3(radius, 0, viewMagnitude)));
