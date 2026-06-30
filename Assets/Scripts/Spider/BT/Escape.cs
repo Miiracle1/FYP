@@ -5,10 +5,11 @@ using UnityEngine.AI;
 namespace Spider.BT
 {
     [TaskCategory("Spider")]
-    [TaskDescription("Turns around then escape from player")]
+    [TaskDescription("Escape from player")]
     public class Escape : Action
     {
-        [SerializeField] private float rotationSpeed = 180f;
+        [SerializeField] private float escapeDistance = 5f;
+
         private SpiderAI spider;
         private NavMeshAgent agent;
         private Animator animator;
@@ -19,17 +20,33 @@ namespace Spider.BT
             spider = GetComponent<SpiderAI>();
             agent = GetComponent<NavMeshAgent>();
             animator = GetComponent<Animator>();
+            Vector3 destination = transform.position + transform.forward * escapeDistance;
 
-            targetRotation = transform.rotation * Quaternion.Euler(0f, 180f, 0f);
+            agent.isStopped = false;
+            agent.SetDestination(destination);
         }
 
         public override TaskStatus OnUpdate()
         {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            if (agent.pathPending)
+                return TaskStatus.Running;
 
-            if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
+            if (agent.remainingDistance <= 0.01f)
             {
+                spider.SetPhase2();
                 return TaskStatus.Success;
+            }
+
+            return TaskStatus.Running;
+
+            // Dont know this approach work or not
+            if (agent.remainingDistance <= agent.stoppingDistance)
+            {
+                if (!agent.hasPath || agent.velocity.sqrMagnitude < 0.01f)
+                {
+                    //animator.SetBool("Walk", false);
+                    return TaskStatus.Success;
+                }
             }
 
             return TaskStatus.Running;

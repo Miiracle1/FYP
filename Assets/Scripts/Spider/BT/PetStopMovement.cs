@@ -15,7 +15,7 @@ namespace Spider.BT
 		{
 			agent.isStopped = true;
 			agent.ResetPath();
-			//If (agent.TryGetComponent<SpiderAI>(out var spider)) spider.ResetAnimationState();
+			//If (agent.TryGetComponent<SpiderAI>(out var lobbySpider)) lobbySpider.ResetAnimationState();
 
 		}
 

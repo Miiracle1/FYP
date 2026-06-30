@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class LobbyManager : MonoBehaviour
 {
+    [Header("Spider Prefab")]
+    [SerializeField] private GameObject lobbySpider;
+    [SerializeField] private GameObject spawnArea;
+
     public static LobbyManager instance;
     private SceneEnums nextScene;
 
@@ -21,9 +25,19 @@ public class LobbyManager : MonoBehaviour
 
     private void Start()
     {
+        // Use player pref to track if first time playing
         if (!PlayerPrefs.HasKey("Tutorial"))
         {
             PlayerPrefs.SetString("Tutorial", "True");
+        }
+
+        // Use player pref to track if player caught spider in game
+        if (PlayerPrefs.HasKey("Got Spider") && lobbySpider != null && spawnArea != null)
+        {
+            if (PlayerPrefs.GetString("Got Spider") == "True")
+            {
+                Instantiate(lobbySpider, spawnArea.transform.position, Quaternion.identity);
+            }
         }
     }
 

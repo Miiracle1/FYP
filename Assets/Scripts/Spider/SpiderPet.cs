@@ -3,7 +3,8 @@ using System.Linq;
 using UnityEngine;
 
 /// <summary>
-/// Detects player pet action then invokes main spider script to execute logic.
+/// Detects player pet action then invokes main lobbySpider script to execute logic.
+/// Also detects catch interaction.
 /// </summary>
 public class SpiderPet : MonoBehaviour
 {

@@ -32,9 +32,9 @@ namespace Spider.BT
             }
 
             /*
-            if (TryGetComponent<SpiderController>(out var spider))
+            if (TryGetComponent<SpiderController>(out var lobbySpider))
             {
-                eyeSocket = spider.GetEyeSocketTransform();
+                eyeSocket = lobbySpider.GetEyeSocketTransform();
             }*/
 
             //var target = GameObject.FindGameObjectWithTag(targetTag);

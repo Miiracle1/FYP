@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Tracks spider body parts enum
+/// Tracks lobbySpider body parts enum
 /// </summary>
 public enum SpiderPartEnums
 {

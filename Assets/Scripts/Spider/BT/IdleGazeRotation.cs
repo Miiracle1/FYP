@@ -19,9 +19,9 @@ namespace Spider.BT
         public override void OnStart()
         {
             player = Camera.main.transform;
-            /*if (TryGetComponent<SpiderController>(out var spider))
+            /*if (TryGetComponent<SpiderController>(out var lobbySpider))
             {
-                head = spider.GetHeadSocket();
+                head = lobbySpider.GetHeadSocket();
             }*/
         }
 
@@ -32,7 +32,7 @@ namespace Spider.BT
                 return TaskStatus.Running;
             }
 
-            // Determine what angle player looking cause spider to rotate towards player
+            // Determine what angle player looking cause lobbySpider to rotate towards player
             var directionToSpider = (transform.position - player.position).normalized;
 
             float angle = Vector3.Angle(player.forward, directionToSpider);
@@ -42,7 +42,7 @@ namespace Spider.BT
                 return TaskStatus.Running;
             }
 
-            // Rotate spider to player camera position
+            // Rotate lobbySpider to player camera position
             Vector3 direction = player.position - transform.position;
 
             direction.y = 0f;
