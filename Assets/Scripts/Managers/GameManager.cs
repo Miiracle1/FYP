@@ -72,6 +72,12 @@ public class GameManager : MonoBehaviour
         GameProgressTracker.GameState = GameStateEnums.Playing;
     }
 
+    // Put in first game greenhouse scene
+    public void WinGame()
+    {
+        PlayerPrefs.SetString("Got Spider", "True");
+    }
+
     public void ExitLevel()
     {
         FadeCanvas fadeCanvas = FindFirstObjectByType<FadeCanvas>();

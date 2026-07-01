@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class LobbyManager : MonoBehaviour
 {
@@ -44,12 +45,12 @@ public class LobbyManager : MonoBehaviour
     /***************************************************************************************************************************************************************************************/
     //Methods
 
-    public void SetGarageScene()
+    public void SetGarageScene(SelectEnterEventArgs args)
     {
         nextScene = SceneEnums.Garage;
     }
 
-    public void SetGreenHouseScene()
+    public void SetGreenHouseScene(SelectEnterEventArgs args)
     {
         nextScene = SceneEnums.Greenhouse;
     }

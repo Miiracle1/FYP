@@ -11,6 +11,8 @@ public partial class SpiderAI
 
     private bool phase1; // flag to check if the lobbySpider is in phase1 level not lobby
     private bool phase2 = false;
+    private bool isGrabbed = false;
+    private bool isAttached = false;
 
     public static event Action OnPhase2Start;
     public static event Action OnPhase2End;
@@ -25,6 +27,10 @@ public partial class SpiderAI
         get => phase2;
     }
 
+    public bool IsGrabbed { get => isGrabbed; }
+
+    public bool IsAttached { get => isAttached; }
+
     public void SetPhase2()
     { 
         phase1 = false;
@@ -36,5 +42,15 @@ public partial class SpiderAI
     {
         phase2 = false;
         OnPhase2End?.Invoke();
+    }
+
+    public void SetGrabbed(bool value)
+    { 
+        isGrabbed = value;
+    }
+
+    public void SetAttached(bool value) 
+    { 
+        isAttached = value; 
     }
 }
