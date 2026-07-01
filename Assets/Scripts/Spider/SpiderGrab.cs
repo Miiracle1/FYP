@@ -1,52 +1,64 @@
-using BehaviorDesigner.Runtime;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class SpiderGrab : MonoBehaviour
 {
     private SpiderAI spider;
     private NavMeshAgent agent;
-    private BehaviorTree behaviorTree;
     private SpiderAttachPoint currentAttachPoint;
     private Player player;
+    private XRGrabInteractable grabInteractable;
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
 
-    void Start()
+    private void Awake()
     {
         spider = GetComponent<SpiderAI>();
         agent = GetComponent<NavMeshAgent>();
-        behaviorTree = GetComponent<BehaviorTree>();
 
         player = FindAnyObjectByType<Player>();
+        grabInteractable = GetComponent<XRGrabInteractable>();
+    }
+
+    private void OnEnable()
+    {
+        grabInteractable.selectEntered.AddListener(Grab);
+        grabInteractable.selectExited.AddListener(Release);
+    }
+
+    private void OnDisable()
+    {
+        grabInteractable.selectEntered.RemoveListener(Grab);
+        grabInteractable.selectExited.RemoveListener(Release);
     }
 
     /***************************************************************************************************************************************************************************************/
     // Methods
 
-    public void Grab(Transform hand)
+    public void Grab(SelectEnterEventArgs args)
     {
-        spider.SetAttached(false);
+        if (spider.IsGrabbed)
+            return;
 
-        transform.SetParent(hand);
+        spider.SetAttached(false);
+        player.SetAttachingSpider(false);
         agent.enabled = false;
         spider.SetGrabbed(true);
-
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.identity;
     }
 
-    public void Release()
+    public void Release(SelectExitEventArgs args)
     {
+        spider.SetGrabbed(false);
+
         if (currentAttachPoint != null)
         {
-            spider.SetGrabbed(false);
             AttachToPoint(currentAttachPoint);
         }
         else
         {
-            spider.SetGrabbed(false);
             ReturnToGround();
         }
     }
@@ -54,12 +66,14 @@ public class SpiderGrab : MonoBehaviour
     private void AttachToPoint(SpiderAttachPoint point)
     {
         transform.SetParent(point.transform);
-        spider.SetAttached(true);
-
+        
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
 
+        spider.SetAttached(true);
+        player.SetAttachingSpider(true);
         agent.enabled = false;
+        currentAttachPoint = null;
     }
 
     private void ReturnToGround()
@@ -69,7 +83,9 @@ public class SpiderGrab : MonoBehaviour
             transform.position = hit.point;
         }
 
-        transform.SetParent(null);
+        spider.SetAttached(false);
+        player.SetAttachingSpider(false);
+        currentAttachPoint = null;
 
         agent.enabled = true;
         agent.Warp(transform.position);
@@ -78,28 +94,8 @@ public class SpiderGrab : MonoBehaviour
     /***************************************************************************************************************************************************************************************/
     // Triggers
 
-    private void OnTriggerEnter(Collider other)
+    public void SetPoint(SpiderAttachPoint point)
     {
-        if (other.CompareTag("AttachPoints"))
-        {
-            if (other.TryGetComponent<SpiderAttachPoint>(out var point))
-            {
-                currentAttachPoint = point;
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("AttachPoints"))
-        {
-            if (other.TryGetComponent<SpiderAttachPoint>(out var point))
-            {
-                if (point == currentAttachPoint)
-                {
-                    currentAttachPoint = null;
-                }
-            }
-        }
+        currentAttachPoint = point;
     }
 }
