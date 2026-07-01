@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: -4689459778692068259, guid: e58e7a3a549ab3044a741f67633c1b19, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2303facc47b38c34f877c2c0aceb7e45, type: 2}
+      objectReference: {fileID: 2100000, guid: b6a320411152f7b4cbb14b6031a50085, type: 2}
     - target: {fileID: 919132149155446097, guid: e58e7a3a549ab3044a741f67633c1b19, type: 3}
       propertyPath: m_Name
       value: garage main layout
