@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: c22a2c3272ce72b4c8ec59f0f89f9e5a
+guid: 2f9123e30f119674c9babfcb44a455d3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: greenhouse_body
+    second: {fileID: 2100000, guid: 55d784ed0877df242a7d9e7b104b5e2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: transparent_plastic
+    second: {fileID: 2100000, guid: a9b8167d0e0210f4abff6316572fac81, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
