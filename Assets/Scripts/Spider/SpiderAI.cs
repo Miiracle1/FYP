@@ -7,15 +7,19 @@ using UnityEngine.AI;
 public partial class SpiderAI : MonoBehaviour
 {
     private NavMeshAgent agent;
-    private Animator animator;
+    public Animator animator;
+
+    public SpiderMode mode;
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
 
     private void Awake()
     {
-        //agent = GetComponent<NavMeshAgent>();
-        //animator = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
+
+        if (mode == SpiderMode.Game)
+            CachePhase2Points();
     }
 
     void Start()
@@ -46,4 +50,19 @@ public partial class SpiderAI : MonoBehaviour
             agent.speed = (animator.deltaPosition / Time.deltaTime).magnitude;
         }*/
     }
+
+    public Animator GetAnimatorReference()
+    {
+        if (!animator) return null;
+        
+        return animator;
+    }
+}
+
+public enum SpiderMode
+{ 
+    Lobby,
+    Game,
+    Phase1,
+    Phase2
 }

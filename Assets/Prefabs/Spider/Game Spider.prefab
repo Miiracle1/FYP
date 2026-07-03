@@ -126,8 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWhenEnabled: 1
   asynchronousLoad: 0
-  pauseWhenDisabled: 0
-  restartWhenComplete: 0
+  pauseWhenDisabled: 1
+  restartWhenComplete: 1
   logTaskChanges: 0
   group: 0
   resetValuesOnRestart: 0
@@ -165,6 +165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possiblePositions: []
+  animator: {fileID: 5036952059022424144}
+  mode: 0
   handTrackDistance: 0
 --- !u!114 &177307538934505341
 MonoBehaviour:
