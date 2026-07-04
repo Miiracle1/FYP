@@ -39,16 +39,11 @@ namespace spider.BT
                 return TaskStatus.Failure;
 
             if (Time.time < nextCheckTime)
-                return TaskStatus.Running;
+                return TaskStatus.Failure;
 
             nextCheckTime = Time.time + checkInterval;
 
-            if (SpiderCanSeePlayer() && PlayerLookingAtSpider())
-            {
-                return TaskStatus.Success;
-            }
-
-            return TaskStatus.Running;
+            return SpiderCanSeePlayer() && PlayerLookingAtSpider() ? TaskStatus.Success : TaskStatus.Failure;
         }
 
         private bool SpiderCanSeePlayer()

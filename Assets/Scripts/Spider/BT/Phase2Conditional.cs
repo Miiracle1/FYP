@@ -5,7 +5,7 @@ using BehaviorDesigner.Runtime.Tasks;
 namespace Spider.BT
 {
 	[TaskCategory("Spider")]
-	[TaskDescription("Conditional Task to check if phase 2 already")]
+	[TaskDescription("Conditional Task to check if just entered phase 2")]
 	public class Phase2Conditional : Conditional
 	{
 		private SpiderAI spider;
@@ -17,7 +17,7 @@ namespace Spider.BT
 
 		public override TaskStatus OnUpdate()
 		{
-			return spider.InGamePhase2 ? TaskStatus.Success : TaskStatus.Failure;
+			return spider.justEnteredPhase2 ? TaskStatus.Success : TaskStatus.Failure;
 		}
 	}
 }

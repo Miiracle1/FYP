@@ -21,13 +21,15 @@ namespace Spider.BT
 			var randomPoint = Random.Range(0, spider.SpiderPhase2Points.Length);
 			spider.SetCurrentTPPoint(spider.SpiderPhase2Points[randomPoint]);
 			teleportPoint = spider.SpiderPhase2Points[randomPoint].transform;
-		}
+
+            agent.Warp(teleportPoint.position);
+
+			spider.EnterPhase2();
+        }
 
 		public override TaskStatus OnUpdate()
 		{
 			if (teleportPoint == null) return TaskStatus.Running;
-
-			agent.Warp(teleportPoint.position);
 
 			return TaskStatus.Success;
 		}

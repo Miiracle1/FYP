@@ -13,7 +13,7 @@ public class PlayIdleAnim : Action
         spider = GetComponent<SpiderAI>();
         agent = GetComponent<NavMeshAgent>();
 
-        spider.PlayIdleAnim();
+        spider.StopAllAnim();
     }
 
 	public override TaskStatus OnUpdate()

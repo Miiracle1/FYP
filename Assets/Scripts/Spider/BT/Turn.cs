@@ -12,16 +12,16 @@ namespace Spider.BT
         [SerializeField] private float rotationSpeed = 180f;
         private SpiderAI spider;
         private NavMeshAgent agent;
-        private Animator animator;
         private Quaternion targetRotation;
 
         public override void OnStart()
         {
             spider = GetComponent<SpiderAI>();
             agent = GetComponent<NavMeshAgent>();
-            animator = GetComponent<Animator>();
 
             targetRotation = transform.rotation * Quaternion.Euler(0f, 180f, 0f);
+
+            spider.PlayMoveAnim();
         }
 
         public override TaskStatus OnUpdate()
