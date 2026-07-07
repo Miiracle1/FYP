@@ -27,7 +27,7 @@ public class BootstrapManager : MonoBehaviour
                 break;
 
             case SceneEnums.Greenhouse:
-                SceneLoader.instance.LoadScene("Greenhouse");
+                SceneLoader.instance.LoadScene("GreenHouse");
                 break;
 
             case SceneEnums.Garage:

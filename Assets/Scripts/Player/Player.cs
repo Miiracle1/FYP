@@ -2,6 +2,9 @@ using UnityEngine;
 
 public partial class Player : MonoBehaviour
 {
+    [Header("Camera Settings")]
+    [SerializeField] private float FOV = 0.6f;
+
     private bool isAttachingSpider = false;
 
     /***************************************************************************************************************************************************************************************/
@@ -10,6 +13,7 @@ public partial class Player : MonoBehaviour
     void Start()
     {
         InitializeHealth();
+        AdjustFOV();
     }
 
     /***************************************************************************************************************************************************************************************/
@@ -23,6 +27,11 @@ public partial class Player : MonoBehaviour
     public void SetAttachingSpider(bool value)
     { 
         isAttachingSpider = value;
+    }
+
+    private void AdjustFOV()
+    { 
+        this.transform.localScale = Vector3.one * FOV;
     }
 }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityToolbarExtender;
 
 /// <summary>
-/// Utilize toolbar extender package to load scenes easily and auto save scene when press Play.
+/// Utilize toolbar extender package to load scenes easily and auto save nextScene when press Play.
 /// </summary>
 [InitializeOnLoad]
 public static class SceneToolbar

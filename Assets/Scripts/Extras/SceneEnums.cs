@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Stores scene enums
+/// Stores nextScene enums
 /// </summary>
 public enum SceneEnums
 {

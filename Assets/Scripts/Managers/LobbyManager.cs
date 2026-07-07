@@ -11,7 +11,7 @@ public class LobbyManager : MonoBehaviour
     public static LobbyManager instance;
     private SceneEnums nextScene;
 
-    public event Action OnLobbyChanged; // action to notify subs when changed scene from lobby
+    public event Action OnLobbyChanged; // action to notify subs when changed nextScene from lobby
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
@@ -55,7 +55,7 @@ public class LobbyManager : MonoBehaviour
         nextScene = SceneEnums.Greenhouse;
     }
 
-    public void EnterLevel()
+    public void EnterLevel(SceneEnums scene)
     { 
         FadeCanvas fadeCanvas = FindFirstObjectByType<FadeCanvas>();
 
@@ -67,7 +67,7 @@ public class LobbyManager : MonoBehaviour
             //nextScene = SceneEnums.Garage;
         }
 
-        GameProgressTracker.Scene = nextScene;
+        GameProgressTracker.Scene = scene;
         SceneLoader.instance.LoadScene("Bootstrap Scene");
 
     }

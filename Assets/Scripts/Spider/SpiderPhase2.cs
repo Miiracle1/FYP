@@ -12,8 +12,6 @@ public partial class SpiderAI
     /// </summary>
     private void CachePhase2Points()
     {
-        if (SpiderPhase2Points == null) return;
-
         SpiderPhase2Points = FindObjectsByType<Phase2Points>(FindObjectsSortMode.None);
     }
 

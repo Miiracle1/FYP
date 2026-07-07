@@ -12,18 +12,18 @@ namespace Spider.BT
 
         private SpiderAI spider;
         private NavMeshAgent agent;
-        private Animator animator;
         private Quaternion targetRotation;
 
         public override void OnStart()
         {
             spider = GetComponent<SpiderAI>();
             agent = GetComponent<NavMeshAgent>();
-            animator = GetComponent<Animator>();
+
             Vector3 destination = transform.position + transform.forward * escapeDistance;
 
             agent.isStopped = false;
             agent.SetDestination(destination);
+            spider.PlayMoveAnim();
         }
 
         public override TaskStatus OnUpdate()
@@ -34,6 +34,7 @@ namespace Spider.BT
             if (agent.remainingDistance <= 0.01f)
             {
                 spider.SetPhase2();
+                spider.StopMoveAnim();
                 return TaskStatus.Success;
             }
 

@@ -156,7 +156,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2405326508948765084}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -240,8 +240,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possiblePositions: []
+  justEnteredPhase2: 0
   animator: {fileID: 439021191656140509}
   mode: 0
+  idleClip: {fileID: 0}
+  movingClip: {fileID: 0}
+  escapeAmount: 1
   handTrackDistance: 0
 --- !u!114 &3823668337961350766
 MonoBehaviour:

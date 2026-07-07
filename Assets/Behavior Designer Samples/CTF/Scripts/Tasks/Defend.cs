@@ -92,7 +92,7 @@ namespace BehaviorDesigner.Samples
             navMeshAgent.enabled = false;
         }
 
-        // Draw the area that we are defending within the editor scene window
+        // Draw the area that we are defending within the editor nextScene window
         public override void OnDrawGizmos()
         {
 #if UNITY_EDITOR

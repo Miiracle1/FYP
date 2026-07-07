@@ -23,8 +23,6 @@ namespace Spider.BT
 			teleportPoint = spider.SpiderPhase2Points[randomPoint].transform;
 
             agent.Warp(teleportPoint.position);
-
-			spider.EnterPhase2();
         }
 
 		public override TaskStatus OnUpdate()
@@ -33,5 +31,10 @@ namespace Spider.BT
 
 			return TaskStatus.Success;
 		}
+
+        public override void OnEnd()
+        {
+            spider.EnterPhase2();
+        }
 	}
 }

@@ -19,12 +19,19 @@ public partial class SpiderAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
 
         if (mode == SpiderMode.Game)
+        {
             CachePhase2Points();
+        }
     }
 
     void Start()
     {
         GetHandReference();
+
+        if (mode == SpiderMode.Game)
+        {
+            StartPhase1();
+        }
     }
 
     void Update()
@@ -40,6 +47,22 @@ public partial class SpiderAI : MonoBehaviour
         }*/
 
         CheckHandDistance();
+    }
+
+    private void OnEnable()
+    {
+        if (mode == SpiderMode.Game)
+        {
+            GameManager.OnFirstPhaseStarted += StartPhase1;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (mode == SpiderMode.Game)
+        {
+            GameManager.OnFirstPhaseStarted -= StartPhase1;
+        }
     }
 
     private void OnAnimatorMove()

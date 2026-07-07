@@ -93,7 +93,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278774557279309012}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -140,7 +140,7 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"WaitingTime","IsShared":true,"SinglemValue":6}]}'
+      JSONSerialization: '{"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"WaitingTime","IsShared":true,"SinglemValue":6},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"targetPos","IsShared":true,"Vector3mValue":"(0,0,0)"},{"Type":"BehaviorDesigner.Runtime.SharedVector3","Name":"escapePosition","IsShared":true,"Vector3mValue":"(0,0,0)"}]}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -165,8 +165,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possiblePositions: []
+  justEnteredPhase2: 0
   animator: {fileID: 5036952059022424144}
-  mode: 0
+  mode: 1
+  idleClip: {fileID: 0}
+  movingClip: {fileID: 0}
+  escapeAmount: 1
   handTrackDistance: 0
 --- !u!114 &177307538934505341
 MonoBehaviour:
@@ -355,7 +359,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.021661822, y: 0.015691156, z: 0.04411461}
+  m_Size: {x: 0.04, y: 0.03, z: 0.04411461}
   m_Center: {x: -0.0007137723, y: 0.0060477545, z: 0.016447252}
 --- !u!114 &8432549643612484139
 MonoBehaviour:

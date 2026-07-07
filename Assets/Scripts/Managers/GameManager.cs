@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     [Header("Locomotion")]
     [SerializeField] private DynamicMoveProvider dynamicMoveProvider;
 
+    public static event Action OnFirstPhaseStarted;
     public static event Action OnSecondPhaseStarted; // Invoke after lights on
 
     /***************************************************************************************************************************************************************************************/
@@ -36,7 +38,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        GameProgressTracker.LightsOn = false;
         if (dynamicMoveProvider != null) 
             dynamicMoveProvider.enabled = false;
     }
@@ -54,10 +55,12 @@ public class GameManager : MonoBehaviour
     //Unity Methods
 
     /// <summary>
-    /// After finish fade in, start showing UI panels
+    /// After finish fade in, start showing UI panels.
+    /// And sets game state to playing.
     /// </summary>
     public void ShowUI()
-    { 
+    {
+        GameProgressTracker.GameState = GameStateEnums.Playing;
         if (firstPanel != null)
             firstPanel.SetActive(true);
     }
@@ -67,12 +70,16 @@ public class GameManager : MonoBehaviour
     /// Starts level sequence.
     /// </summary>
     public void StartLevel()
-    { 
+    {
+        if (firstPanel != null)
+            firstPanel.SetActive(false);
+
         dynamicMoveProvider.enabled = true;
         GameProgressTracker.GameState = GameStateEnums.Playing;
+        OnFirstPhaseStarted?.Invoke();
     }
 
-    // Put in first game greenhouse scene
+    // Put in first game greenhouse nextScene
     public void WinGame()
     {
         PlayerPrefs.SetString("Got Spider", "True");

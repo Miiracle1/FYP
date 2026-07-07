@@ -30,6 +30,7 @@ namespace Spider.BT
 
             if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
             {
+                spider.StopMoveAnim();
                 return TaskStatus.Success;
             }
 

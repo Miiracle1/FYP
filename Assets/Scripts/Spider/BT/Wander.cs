@@ -12,13 +12,18 @@ namespace Spider.BT
         public SharedVector3 targetPos;
 
         private NavMeshAgent agent;
+        private SpiderAI spider;
 
         public override void OnStart()
         {
             agent = GetComponent<NavMeshAgent>();
+            spider = GetComponent<SpiderAI>();
             agent.isStopped = false;
 
             agent.SetDestination(targetPos.Value);
+
+            if (spider != null ) 
+                spider.PlayMoveAnim();
 
             Debug.Log("sfgsdfsf" + targetPos);
         }

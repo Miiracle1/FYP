@@ -7,7 +7,8 @@ public class HoldInteractDoor : MonoBehaviour
 {
     [SerializeField] private float holdDuration = 2f;
 
-    public SceneEnums scene;
+    public SceneEnums currentScene;
+    public SceneEnums nextScene;
     private bool isHolding;
     private float timer;
 
@@ -59,14 +60,14 @@ public class HoldInteractDoor : MonoBehaviour
     }
 
     /// <summary>
-    /// Set static scene enum and load bootstap scene to load specific scene.
+    /// Set static nextScene enum and load bootstap nextScene to load specific nextScene.
     /// By default load lobby
     /// </summary>
     private void OnHoldComplete()
     {
-        if (scene == SceneEnums.Lobby)
+        if (currentScene == SceneEnums.Lobby)
         {
-            LobbyManager.instance.EnterLevel();
+            LobbyManager.instance.EnterLevel(nextScene);
             return;
         }
 

@@ -40,7 +40,7 @@ namespace BehaviorDesigner.Samples
             return TaskStatus.Failure;
         }
 
-        // Draw the line of sight representation within the scene window
+        // Draw the line of sight representation within the nextScene window
         public override void OnDrawGizmos()
         {
             NPCViewUtilities.DrawLineOfSight(Owner.transform, fieldOfViewAngle, sqrViewMagnitude);

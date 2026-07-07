@@ -15,13 +15,11 @@ namespace Spider.BT
 
 		private SpiderAI spider;
 		private NavMeshAgent agent;
-		private Animator animator;
 
 		public override void OnStart()
 		{
 			spider = GetComponent<SpiderAI>();
 			agent = GetComponent<NavMeshAgent>();
-			animator = GetComponent<Animator>();
 		}
 
 		public override TaskStatus OnUpdate()

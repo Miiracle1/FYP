@@ -33,6 +33,11 @@ public partial class SpiderAI
 
     public bool IsAttached { get => isAttached; }
 
+    private void StartPhase1()
+    {
+        phase1 = true;
+    }
+
     public void SetPhase2()
     { 
         phase1 = false;
