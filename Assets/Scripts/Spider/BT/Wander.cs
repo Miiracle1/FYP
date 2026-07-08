@@ -53,5 +53,9 @@ namespace Spider.BT
 
             return TaskStatus.Running;
         }
+        public override void OnEnd()
+        {
+            spider.StopMoveAnim();
+        }
     }
 }

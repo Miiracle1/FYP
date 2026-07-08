@@ -67,11 +67,11 @@ public partial class SpiderAI : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        /* let agent speed match animation
-        if (animator.GetBool("Running"))
+         //let agent speed match animation
+        if (animator.GetBool("Move"))
         { 
             agent.speed = (animator.deltaPosition / Time.deltaTime).magnitude;
-        }*/
+        }
     }
 
     public Animator GetAnimatorReference()
