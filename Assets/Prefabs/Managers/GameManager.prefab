@@ -44,5 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a05f4fd40402594f9a6482f8dc12692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 180
   firstPanel: {fileID: 0}
+  dynamicMoveProvider: {fileID: 0}
+  indicator: {fileID: 8019134568281382735, guid: e9f1f2b2eda61a142a9338c748fb06ef, type: 3}
+  indicatorTimer: 10
+  heightOffset: 2

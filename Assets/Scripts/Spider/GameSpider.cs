@@ -41,7 +41,6 @@ public partial class SpiderAI
     public void SetPhase2()
     { 
         phase1 = false;
-        OnPhase2Start?.Invoke();
         justEnteredPhase2 = true;
     }
 
@@ -49,6 +48,7 @@ public partial class SpiderAI
     {
         justEnteredPhase2 = false;
         phase2 = true;
+        OnPhase2Start?.Invoke();
     }
 
     public void SetEndPhase2()

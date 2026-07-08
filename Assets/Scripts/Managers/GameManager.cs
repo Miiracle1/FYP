@@ -1,5 +1,5 @@
 using System;
-using UnityEditor.PackageManager;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
@@ -10,17 +10,20 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [Header("Time")]
-    [SerializeField] private float timer = 180f;
-
     [Header("UI Panels")]
     [SerializeField] private GameObject firstPanel;
 
     [Header("Locomotion")]
     [SerializeField] private DynamicMoveProvider dynamicMoveProvider;
 
+    [Header("Indicator")]
+    [SerializeField] private GameObject indicator;
+    [SerializeField] private float indicatorTimer = 10f;
+    [SerializeField] private float heightOffset = 2f;
+
+    private Phase2Points[] Phase2Points;
+    private Coroutine indicatorCoroutine;
     public static event Action OnFirstPhaseStarted;
-    public static event Action OnSecondPhaseStarted; // Invoke after lights on
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
@@ -40,19 +43,23 @@ public class GameManager : MonoBehaviour
     {
         if (dynamicMoveProvider != null) 
             dynamicMoveProvider.enabled = false;
+
+        Phase2Points = FindObjectsByType<Phase2Points>(FindObjectsSortMode.None);
     }
 
     private void OnEnable()
     {
         FadeCanvas.OnFinishFadeIn += ShowUI;
+        SpiderAI.OnPhase2Start += ShowIndicator;
     }
     private void OnDisable()
     {
         FadeCanvas.OnFinishFadeIn -= ShowUI;
+        SpiderAI.OnPhase2Start -= ShowIndicator;
     }
 
     /***************************************************************************************************************************************************************************************/
-    //Unity Methods
+    //Game Flow Methods
 
     /// <summary>
     /// After finish fade in, start showing UI panels.
@@ -87,6 +94,7 @@ public class GameManager : MonoBehaviour
 
     public void ExitLevel()
     {
+        StopIndicator();
         FadeCanvas fadeCanvas = FindFirstObjectByType<FadeCanvas>();
 
         if (fadeCanvas != null)
@@ -103,6 +111,48 @@ public class GameManager : MonoBehaviour
         GameProgressTracker.Scene = SceneEnums.Lobby;
 
         SceneLoader.instance.LoadScene("Bootstrap Scene");
+    }
 
+    /***************************************************************************************************************************************************************************************/
+    //Indicators
+
+    private void ShowIndicator()
+    {
+        if (indicatorCoroutine != null)
+            StopCoroutine(indicatorCoroutine);
+
+        indicatorCoroutine = StartCoroutine(IndicatorRoutine());
+    }
+
+    private IEnumerator IndicatorRoutine()
+    {
+        while (true)
+        {
+            SpawnIndicator();
+            yield return new WaitForSeconds(indicatorTimer);
+        }
+    }
+
+    private void SpawnIndicator()
+    {
+        if (Phase2Points == null)
+        {
+            Debug.LogWarning("Phase 2 points not in game manager!");
+            return;
+        }
+
+        foreach (var point in Phase2Points)
+        {
+            Instantiate(indicator, point.transform.position + new Vector3(0,heightOffset,0), Quaternion.identity, transform);
+        }
+    }
+
+    private void StopIndicator()
+    {
+        if (indicatorCoroutine != null)
+        {
+            StopCoroutine(indicatorCoroutine);
+            indicatorCoroutine = null;
+        }
     }
 }

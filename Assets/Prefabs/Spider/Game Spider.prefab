@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.203, y: -0.08, z: 3.93239}
-  m_LocalScale: {x: 17.9, y: 17.424236, z: 17.424236}
+  m_LocalScale: {x: 12.1, y: 11.778396, z: 11.778396}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8917964417220575369}
@@ -232,10 +232,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 177307538934505341}
+        m_TargetAssemblyTypeName: SpiderGrab, Assembly-CSharp
+        m_MethodName: Grab
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 177307538934505341}
+        m_TargetAssemblyTypeName: SpiderGrab, Assembly-CSharp
+        m_MethodName: Release
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -359,8 +383,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.04, y: 0.03, z: 0.04411461}
-  m_Center: {x: -0.0007137723, y: 0.0060477545, z: 0.016447252}
+  m_Size: {x: 0.04, y: 0.03500622, z: 0.08}
+  m_Center: {x: -0.0007137723, y: 0.014150268, z: 0}
 --- !u!114 &8432549643612484139
 MonoBehaviour:
   m_ObjectHideFlags: 0

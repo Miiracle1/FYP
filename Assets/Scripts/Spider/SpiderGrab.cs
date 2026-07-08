@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class SpiderGrab : MonoBehaviour
 {
@@ -9,7 +8,6 @@ public class SpiderGrab : MonoBehaviour
     private NavMeshAgent agent;
     private SpiderAttachPoint currentAttachPoint;
     private Player player;
-    private XRGrabInteractable grabInteractable;
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
@@ -20,19 +18,6 @@ public class SpiderGrab : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
 
         player = FindAnyObjectByType<Player>();
-        grabInteractable = GetComponent<XRGrabInteractable>();
-    }
-
-    private void OnEnable()
-    {
-        grabInteractable.selectEntered.AddListener(Grab);
-        grabInteractable.selectExited.AddListener(Release);
-    }
-
-    private void OnDisable()
-    {
-        grabInteractable.selectEntered.RemoveListener(Grab);
-        grabInteractable.selectExited.RemoveListener(Release);
     }
 
     /***************************************************************************************************************************************************************************************/
@@ -40,8 +25,9 @@ public class SpiderGrab : MonoBehaviour
 
     public void Grab(SelectEnterEventArgs args)
     {
-        if (spider.IsGrabbed)
-            return;
+        if (!spider.InGamePhase2) return;
+
+        if (spider.IsGrabbed) return;
 
         spider.SetAttached(false);
         player.SetAttachingSpider(false);
@@ -51,6 +37,8 @@ public class SpiderGrab : MonoBehaviour
 
     public void Release(SelectExitEventArgs args)
     {
+        if (!spider.InGamePhase2) return;
+
         spider.SetGrabbed(false);
 
         if (currentAttachPoint != null)
