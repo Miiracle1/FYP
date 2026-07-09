@@ -5492,7 +5492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2209823567432570531, guid: fec3b6fd1ea84d64d80cc6e7b827772a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8055830198839113270, guid: fec3b6fd1ea84d64d80cc6e7b827772a, type: 3}
       propertyPath: m_EnableCollision
@@ -5563,6 +5563,10 @@ PrefabInstance:
     - target: {fileID: 5567273626492283041, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974560537067695998, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
