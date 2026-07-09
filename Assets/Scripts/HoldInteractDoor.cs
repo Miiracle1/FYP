@@ -55,7 +55,7 @@ public class HoldInteractDoor : MonoBehaviour
     /// <param name="args"></param>
     public void StopInteraction(SelectExitEventArgs args)
     {
-        isHolding = true;
+        isHolding = false;
         timer = 0;
     }
 
@@ -72,5 +72,10 @@ public class HoldInteractDoor : MonoBehaviour
         }
 
         GameManager.instance.ExitLevel();
+    }
+
+    public void ForceComplete()
+    {
+        OnHoldComplete();
     }
 }

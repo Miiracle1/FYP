@@ -104,13 +104,13 @@ public class GameManager : MonoBehaviour
         if (GameProgressTracker.GameState == GameStateEnums.Victory && PlayerPrefs.GetString("Tutorial") == "True" && GameProgressTracker.Scene != SceneEnums.Greenhouse)
         { 
             GameProgressTracker.Scene = SceneEnums.Greenhouse;
-            SceneLoader.instance.LoadScene("Bootstrap Scene");
+            SceneLoader.instance.LoadScene("GreenHouse");
             return;
         }
 
         GameProgressTracker.Scene = SceneEnums.Lobby;
 
-        SceneLoader.instance.LoadScene("Bootstrap Scene");
+        SceneLoader.instance.LoadScene("Lobby");
     }
 
     /***************************************************************************************************************************************************************************************/

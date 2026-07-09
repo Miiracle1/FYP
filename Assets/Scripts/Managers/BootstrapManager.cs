@@ -24,14 +24,17 @@ public class BootstrapManager : MonoBehaviour
         {
             case SceneEnums.Lobby:
                 SceneLoader.instance.LoadScene("Lobby");
+                Debug.Log("Now laoding lobby yey");
                 break;
 
             case SceneEnums.Greenhouse:
                 SceneLoader.instance.LoadScene("GreenHouse");
+                Debug.Log("Now laoding greenhouse yey");
                 break;
 
             case SceneEnums.Garage:
                 SceneLoader.instance.LoadScene("Garage");
+                Debug.Log("Now laoding garage yey");
                 break;
 
             default:

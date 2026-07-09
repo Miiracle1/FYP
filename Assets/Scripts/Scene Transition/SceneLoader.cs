@@ -37,6 +37,7 @@ public class SceneLoader : MonoBehaviour
         if (!isLoading)
         {
             StartCoroutine(LoadSceneSequence(sceneName));
+            Debug.Log("Startting to load scene");
         }
     }
 
@@ -47,12 +48,22 @@ public class SceneLoader : MonoBehaviour
 
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(targetScene);
 
+        Debug.Log("RN loading scene is " + targetScene);
+
+        if (loadOperation == null)
+        {
+            Debug.LogError($"Failed to load scene: {targetScene}");
+            yield break;
+        }
+
         while (!loadOperation.isDone)
         {
             yield return null;
         }
 
-        onLoadingCompleted?.Invoke();
+        Debug.Log("Laoding should be done");
+
+        //onLoadingCompleted?.Invoke();
         isLoading = false;
     }
 }

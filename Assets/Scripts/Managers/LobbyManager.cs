@@ -26,6 +26,8 @@ public class LobbyManager : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("Teasting scene loader instance" + SceneLoader.instance);
+
         // Use player pref to track if first time playing
         if (!PlayerPrefs.HasKey("Tutorial"))
         {
@@ -40,6 +42,9 @@ public class LobbyManager : MonoBehaviour
                 Instantiate(lobbySpider, spawnArea.transform.position, Quaternion.identity);
             }
         }
+
+        GameProgressTracker.Scene = SceneEnums.Lobby;
+        GameProgressTracker.GameState = GameStateEnums.Lobby;
     }
 
     /***************************************************************************************************************************************************************************************/
@@ -68,7 +73,16 @@ public class LobbyManager : MonoBehaviour
         }
 
         GameProgressTracker.Scene = scene;
-        SceneLoader.instance.LoadScene("Bootstrap Scene");
 
+        if (scene == SceneEnums.Garage)
+        {
+            SceneLoader.instance.LoadScene("Garage");
+        }
+        else if (scene == SceneEnums.Greenhouse)
+        {
+            SceneLoader.instance.LoadScene("GreenHouse");
+        }
+
+        //SceneLoader.instance.LoadScene("Bootstrap Scene");
     }
 }
