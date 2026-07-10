@@ -33,11 +33,11 @@ namespace Spider.BT
 				// Player is within range
 				Debug.Log("Player is near, commencing second phase");
 
-				spider.StopWaitingAnim();
+				spider.StopAllAnim();
 
 				//lobbySpider.PlayScaredAnimation();
 				//waitingTime = lobbySpider.GetAnimationLength() //get the length of animation and pass it to wait task
-				waitingTime = 6f;
+				waitingTime = 4f;
 
 				return TaskStatus.Success;
             }

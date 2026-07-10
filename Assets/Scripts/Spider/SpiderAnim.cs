@@ -13,9 +13,9 @@ public partial class SpiderAI
     /// Call to play wait animation.
     /// Sets move boolean to false.
     /// </summary>
-    public void PlayWaitingAnim()
+    public void PlayIdleAnim()
     {
-        PlayWaiting();
+        PlayIdle();
     }
 
     /// <summary>
@@ -25,15 +25,6 @@ public partial class SpiderAI
     public void PlayMoveAnim()
     { 
         PlayMove();
-    }
-
-    /// <summary>
-    /// Call to stop idle animation.
-    /// Sets idle boolean only to false.
-    /// </summary>
-    public void StopWaitingAnim()
-    { 
-        StopWaiting();
     }
 
     /// <summary>
@@ -47,28 +38,26 @@ public partial class SpiderAI
 
     public void StopAllAnim()
     {
-        StopWaiting();
         StopMove();
+    }
+
+    public bool GetMoveBool()
+    {
+        return animator.GetBool("Move");
     }
 
     /***************************************************************************************************************************************************************************************/
     //Private Methods
 
-    private void PlayWaiting()
+    private void PlayIdle()
     {
-        animator.SetBool("Wait", true);
+        animator.SetTrigger("Idle");
         animator.SetBool("Move", false);
     }
 
     private void PlayMove()
     {
         animator.SetBool("Move", true);
-        animator.SetBool("Wait", false);
-    }
-
-    private void StopWaiting()
-    {
-        animator.SetBool("Wait", false);
     }
 
     private void StopMove()

@@ -214,6 +214,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bc7be0c2b7eb564184e72ebe9f18dba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 66467527}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bc7be0c2b7eb564184e72ebe9f18dba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 66467528}
   m_SourcePrefab: {fileID: 100100000, guid: 3bc7be0c2b7eb564184e72ebe9f18dba, type: 3}
 --- !u!4 &66467525 stripped
 Transform:
@@ -247,6 +250,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8797416820676611330, guid: 3bc7be0c2b7eb564184e72ebe9f18dba, type: 3}
+--- !u!114 &66467528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66467526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &118942274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,6 +329,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4052988705025814269, guid: d3f0f6c676a3fab4180c6487421182f1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 118942276}
+    - targetCorrespondingSourceObject: {fileID: 4052988705025814269, guid: d3f0f6c676a3fab4180c6487421182f1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 118942277}
   m_SourcePrefab: {fileID: 100100000, guid: d3f0f6c676a3fab4180c6487421182f1, type: 3}
 --- !u!1 &118942275 stripped
 GameObject:
@@ -334,6 +360,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 7391c4bfadf4a2e4a9e0bdf52f5830d9, type: 3}
+--- !u!114 &118942277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118942275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &174826109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,7 +3476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0427bb4358edffc47801df50805cd8b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 6186039d62fa413409edb0eefa44fca2, type: 3}
+  clip: {fileID: 8300000, guid: f0f5dcaca17af7b488d9d48c8140582c, type: 3}
 --- !u!4 &1473258515
 Transform:
   m_ObjectHideFlags: 0
@@ -5439,7 +5485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.638
+      value: 23.53
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalRotation.w

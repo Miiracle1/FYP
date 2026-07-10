@@ -36,15 +36,7 @@ public partial class SpiderAI : MonoBehaviour
 
     void Update()
     {
-        /* Example of playing animation when agent is moving
-        if (agent.velocity.magnitude != 0f)
-        {
-            animator.SetBool("Running", true);
-        }
-        else 
-        {
-            animator.SetBool("Running", false);
-        }*/
+        animator.SetBool("Move", agent.velocity.magnitude > 0.1f); // Constantly checking spider velocity to play move animation
 
         CheckHandDistance();
     }

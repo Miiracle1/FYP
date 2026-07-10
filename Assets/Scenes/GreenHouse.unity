@@ -128,7 +128,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4789267}
-  - component: {fileID: 4789268}
   m_Layer: 0
   m_Name: BlueFlowerBed (9)
   m_TagString: Untagged
@@ -152,27 +151,6 @@ Transform:
   - {fileID: 1168217023}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 10.436, z: 0}
---- !u!65 &4789268
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4789266}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8538162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -442,37 +420,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 26311438}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &26311437 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 26311436}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &26311438
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26311437}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.83939004, y: 0.8393899, z: 0.83939004}
-  m_Center: {x: -0.000069901354, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &26311439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -487,7 +436,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29196990}
-  - component: {fileID: 29196991}
   m_Layer: 0
   m_Name: FlowerBed (9)
   m_TagString: Untagged
@@ -511,27 +459,6 @@ Transform:
   - {fileID: 1917764076}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -289.937, z: 0}
---- !u!65 &29196991
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29196989}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &44843775
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +468,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 44843776}
-  - component: {fileID: 44843777}
   m_Layer: 0
   m_Name: BlueFlowerPot
   m_TagString: Untagged
@@ -566,27 +492,6 @@ Transform:
   - {fileID: 676008294}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 10.199, z: 0}
---- !u!65 &44843777
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44843775}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &62030835
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +501,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 62030836}
-  - component: {fileID: 62030837}
   m_Layer: 0
   m_Name: YellowPOT (11)
   m_TagString: Untagged
@@ -621,27 +525,6 @@ Transform:
   - {fileID: 2143791472}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -52.14, z: 0}
---- !u!65 &62030837
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62030835}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &68142246
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +534,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 68142247}
-  - component: {fileID: 68142248}
   m_Layer: 0
   m_Name: BlueFlowerBed (2)
   m_TagString: Untagged
@@ -675,27 +557,6 @@ Transform:
   - {fileID: 1797111461}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -42.396, z: 0}
---- !u!65 &68142248
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68142246}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &109639481
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +598,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 114351431}
-  - component: {fileID: 114351432}
   m_Layer: 0
   m_Name: WhiteFlowerPot (11)
   m_TagString: Untagged
@@ -762,27 +622,6 @@ Transform:
   - {fileID: 1627703459}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -85.321, z: 0}
---- !u!65 &114351432
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114351430}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &116075406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -869,7 +708,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120212834}
-  - component: {fileID: 120212835}
   m_Layer: 0
   m_Name: BlueFlowerPot (3)
   m_TagString: Untagged
@@ -894,27 +732,6 @@ Transform:
   - {fileID: 1418709942}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -89.941, z: 0}
---- !u!65 &120212835
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120212833}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &120230906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1122,7 +939,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 131251674}
-  - component: {fileID: 131251675}
   m_Layer: 0
   m_Name: FlowerBed (3)
   m_TagString: Untagged
@@ -1146,27 +962,6 @@ Transform:
   - {fileID: 135310400}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -289.937, z: 0}
---- !u!65 &131251675
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131251673}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &131509066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1002,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 133526267}
-  - component: {fileID: 133526268}
   m_Layer: 0
   m_Name: WhiteFlowerPot (5)
   m_TagString: Untagged
@@ -1232,27 +1026,6 @@ Transform:
   - {fileID: 1084119306}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -85.321, z: 0}
---- !u!65 &133526268
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133526266}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &135310399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1375,6 +1148,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8102510222520285840, guid: 7e7e8596bd16f0349a9ce9f4b81aaa30, type: 3}
+      propertyPath: firstPanel
+      value: 
+      objectReference: {fileID: 1208463707}
+    - target: {fileID: 8102510222520285840, guid: 7e7e8596bd16f0349a9ce9f4b81aaa30, type: 3}
+      propertyPath: dynamicMoveProvider
+      value: 
+      objectReference: {fileID: 397532510}
     - target: {fileID: 8622176615281283979, guid: 7e7e8596bd16f0349a9ce9f4b81aaa30, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1389,6 +1170,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7529363327216070296, guid: 7e7e8596bd16f0349a9ce9f4b81aaa30, type: 3}
   m_PrefabInstance: {fileID: 146712876}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &146712878 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8102510222520285840, guid: 7e7e8596bd16f0349a9ce9f4b81aaa30, type: 3}
+  m_PrefabInstance: {fileID: 146712876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a05f4fd40402594f9a6482f8dc12692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &157302056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,7 +1221,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166526803}
-  - component: {fileID: 166526804}
   m_Layer: 0
   m_Name: PinkFlowerPot (6)
   m_TagString: Untagged
@@ -1454,27 +1245,6 @@ Transform:
   - {fileID: 562030827}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 11.055, z: 0}
---- !u!65 &166526804
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166526802}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &169303404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1955,7 +1725,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 198354486}
-  - component: {fileID: 198354487}
   m_Layer: 0
   m_Name: YellowPOT (6)
   m_TagString: Untagged
@@ -1980,27 +1749,6 @@ Transform:
   - {fileID: 1856447146}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &198354487
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198354485}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &199650321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2072,7 +1820,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 222947227}
-  - component: {fileID: 222947228}
   m_Layer: 0
   m_Name: YellowPOT (2)
   m_TagString: Untagged
@@ -2097,27 +1844,6 @@ Transform:
   - {fileID: 417640161}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -99.771, z: 0}
---- !u!65 &222947228
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222947226}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &226507717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2251,7 +1977,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256736293}
-  - component: {fileID: 256736294}
   m_Layer: 0
   m_Name: BlueFlowerBed (8)
   m_TagString: Untagged
@@ -2275,27 +2000,6 @@ Transform:
   - {fileID: 2130712399}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -42.396, z: 0}
---- !u!65 &256736294
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256736292}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &270709559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2511,37 +2215,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 294695896}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &294695895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 294695894}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &294695896
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294695895}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &294695897 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -2556,7 +2231,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 296127198}
-  - component: {fileID: 296127199}
   m_Layer: 0
   m_Name: WhiteFlowerPot (1)
   m_TagString: Untagged
@@ -2581,27 +2255,6 @@ Transform:
   - {fileID: 1903649176}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 36.417, z: 0}
---- !u!65 &296127199
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296127197}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &296160935
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,7 +2786,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 355899450}
-  - component: {fileID: 355899451}
   m_Layer: 0
   m_Name: YellowPOT (5)
   m_TagString: Untagged
@@ -3158,27 +2810,6 @@ Transform:
   - {fileID: 1774804445}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 62.447, z: 0}
---- !u!65 &355899451
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355899449}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &358972552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,7 +2819,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358972553}
-  - component: {fileID: 358972554}
   m_Layer: 0
   m_Name: BlueFlowerPot (1)
   m_TagString: Untagged
@@ -3213,27 +2843,6 @@ Transform:
   - {fileID: 1637263933}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 22.303, z: 0}
---- !u!65 &358972554
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358972552}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &365604971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3367,7 +2976,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 379944520}
-  - component: {fileID: 379944521}
   m_Layer: 0
   m_Name: YellowPOT (14)
   m_TagString: Untagged
@@ -3392,27 +3000,6 @@ Transform:
   - {fileID: 243626963}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 124.312, z: 0}
---- !u!65 &379944521
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379944519}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &387352533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,7 +3162,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 392685418}
-  - component: {fileID: 392685419}
   m_Layer: 0
   m_Name: WhiteFlowerPot (19)
   m_TagString: Untagged
@@ -3600,27 +3186,6 @@ Transform:
   - {fileID: 596835936}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -222.258, z: 0}
---- !u!65 &392685419
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392685417}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &397532509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3631,7 +3196,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.32
+      value: 2.866
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3639,23 +3204,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.82
+      value: 4.627
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.992927
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.11872689
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3663,7 +3228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 373.637
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 1217511249746370980, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3682,6 +3247,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
+--- !u!114 &397532510 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4198773743208668928, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
+  m_PrefabInstance: {fileID: 397532509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &400559148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3951,37 +3527,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 422488804}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &422488803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 422488802}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &422488804
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422488803}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.83938974, y: 0.8393899, z: 0.83938974}
-  m_Center: {x: -0.00006990133, y: -0.0018192977, z: -0.000033110373}
 --- !u!4 &422488805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -4105,7 +3652,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 449278715}
-  - component: {fileID: 449278716}
   m_Layer: 0
   m_Name: FlowerBed (11)
   m_TagString: Untagged
@@ -4129,27 +3675,6 @@ Transform:
   - {fileID: 1432548031}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -250.268, z: 0}
---- !u!65 &449278716
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449278714}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &454458678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4221,7 +3746,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 466078026}
-  - component: {fileID: 466078027}
   m_Layer: 0
   m_Name: WhiteFlowerPot (10)
   m_TagString: Untagged
@@ -4246,27 +3770,6 @@ Transform:
   - {fileID: 2060253213}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -85.321, z: 0}
---- !u!65 &466078027
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 466078025}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &472426672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4350,7 +3853,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478098494}
-  - component: {fileID: 478098495}
   m_Layer: 0
   m_Name: PinkFlowerPot (3)
   m_TagString: Untagged
@@ -4375,27 +3877,6 @@ Transform:
   - {fileID: 1058249831}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -62.194, z: 0}
---- !u!65 &478098495
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478098493}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &479595310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,37 +4229,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 503477146}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &503477145 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 503477144}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &503477146
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503477145}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &503477147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -4851,37 +4303,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1779273420919075183, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 538661525}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
---- !u!1 &538661524 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1779273420919075183, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
-  m_PrefabInstance: {fileID: 538661523}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &538661525
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538661524}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &538661526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1439725897100602325, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
@@ -4896,7 +4319,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 538977311}
-  - component: {fileID: 538977312}
   m_Layer: 0
   m_Name: WhiteFlowerPot (13)
   m_TagString: Untagged
@@ -4921,27 +4343,6 @@ Transform:
   - {fileID: 1075849556}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 95.515, z: 0}
---- !u!65 &538977312
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538977310}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &550266108
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,7 +4352,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 550266109}
-  - component: {fileID: 550266110}
   m_Layer: 0
   m_Name: FlowerBed (4)
   m_TagString: Untagged
@@ -4975,27 +4375,6 @@ Transform:
   - {fileID: 821764681}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -216.367, z: 0}
---- !u!65 &550266110
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550266108}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &554525953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5067,7 +4446,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 556043399}
-  - component: {fileID: 556043400}
   m_Layer: 0
   m_Name: BlueFlowerPot (9)
   m_TagString: Untagged
@@ -5092,27 +4470,6 @@ Transform:
   - {fileID: 927038844}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -89.941, z: 0}
---- !u!65 &556043400
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556043398}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &556345023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5372,7 +4729,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 576987351}
-  - component: {fileID: 576987352}
   m_Layer: 0
   m_Name: YellowPOT (12)
   m_TagString: Untagged
@@ -5397,27 +4753,6 @@ Transform:
   - {fileID: 1926813307}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 52.884, z: 0}
---- !u!65 &576987352
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576987350}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &577099388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5649,7 +4984,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 583506544}
-  - component: {fileID: 583506545}
   m_Layer: 0
   m_Name: WhiteFlowerPot (21)
   m_TagString: Untagged
@@ -5674,27 +5008,6 @@ Transform:
   - {fileID: 1770462244}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -140.669, z: 0}
---- !u!65 &583506545
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583506543}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &589026891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5766,7 +5079,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 591133734}
-  - component: {fileID: 591133735}
   m_Layer: 0
   m_Name: GardenBedSet
   m_TagString: Untagged
@@ -5798,27 +5110,6 @@ Transform:
   - {fileID: 1649145413}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &591133735
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591133733}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &596835935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5968,7 +5259,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606818947}
-  - component: {fileID: 606818948}
   m_Layer: 0
   m_Name: BlueFlowerPot (3)
   m_TagString: Untagged
@@ -5993,27 +5283,6 @@ Transform:
   - {fileID: 1134609821}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -89.941, z: 0}
---- !u!65 &606818948
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606818946}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &624102905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6201,19 +5470,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1226262503}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.96302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.96302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.96302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.93
+      value: 0.057781376
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0288906
+      value: -0.05671283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.25
+      value: 2.8986902
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6221,7 +5502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_LocalRotation.y
@@ -6261,8 +5542,119 @@ PrefabInstance:
     - {fileID: -5196431263645462941, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
     - {fileID: 4423045620967985251, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8920191041847380490, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648124191}
+    - targetCorrespondingSourceObject: {fileID: -8920191041847380490, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648124194}
+    - targetCorrespondingSourceObject: {fileID: 9068021269884633676, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648124190}
+    - targetCorrespondingSourceObject: {fileID: 9068021269884633676, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648124193}
   m_SourcePrefab: {fileID: 100100000, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+--- !u!1 &648124188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9068021269884633676, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+  m_PrefabInstance: {fileID: 648124187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &648124189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8920191041847380490, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+  m_PrefabInstance: {fileID: 648124187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &648124190
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648124188}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4811419420035237461, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+--- !u!64 &648124191
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648124189}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 884783167983342714, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+--- !u!4 &648124192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+  m_PrefabInstance: {fileID: 648124187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &648124193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648124188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &648124194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648124189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &648541766
 GameObject:
   m_ObjectHideFlags: 0
@@ -6482,37 +5874,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 665784612}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &665784611 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 665784610}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &665784612
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665784611}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &665784613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -6527,7 +5890,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 666030205}
-  - component: {fileID: 666030206}
   m_Layer: 0
   m_Name: GardenBedSet (1)
   m_TagString: Untagged
@@ -6550,27 +5912,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -90.095, z: 0}
---- !u!65 &666030206
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666030204}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &671234721
 GameObject:
   m_ObjectHideFlags: 0
@@ -6685,7 +6026,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 679889047}
-  - component: {fileID: 679889048}
   m_Layer: 0
   m_Name: BlueFlowerPot (6)
   m_TagString: Untagged
@@ -6710,27 +6050,6 @@ Transform:
   - {fileID: 1203533602}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 116.035, z: 0}
---- !u!65 &679889048
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679889046}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &682236123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6740,7 +6059,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 682236124}
-  - component: {fileID: 682236125}
   m_Layer: 0
   m_Name: BlueFlowerBed
   m_TagString: Untagged
@@ -6764,27 +6082,6 @@ Transform:
   - {fileID: 577698201}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 25.631, z: 0}
---- !u!65 &682236125
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682236123}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &685900853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6998,6 +6295,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5519912822105809527, guid: 5c13bd5898fb7ac458aeb153e36e0ded, type: 3}
   m_PrefabInstance: {fileID: 711719087}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &713504852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713504853}
+  - component: {fileID: 713504854}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &713504853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713504852}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.14032, y: 0.22444999, z: 2.64884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766532132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &713504854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713504852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7513d7fc3c0e54980852af331774b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &726101804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7007,7 +6348,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 726101805}
-  - component: {fileID: 726101806}
   m_Layer: 0
   m_Name: BlueFlowerPot (13)
   m_TagString: Untagged
@@ -7032,27 +6372,6 @@ Transform:
   - {fileID: 1642973568}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -102.054, z: 0}
---- !u!65 &726101806
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726101804}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &730972886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7128,7 +6447,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746429522}
-  - component: {fileID: 746429523}
   m_Layer: 0
   m_Name: PinkFlowerPot (1)
   m_TagString: Untagged
@@ -7153,27 +6471,6 @@ Transform:
   - {fileID: 1704289092}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -95.958, z: 0}
---- !u!65 &746429523
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746429521}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &761802179
 GameObject:
   m_ObjectHideFlags: 0
@@ -7183,7 +6480,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 761802180}
-  - component: {fileID: 761802181}
   m_Layer: 0
   m_Name: BlueFlowerPot (1)
   m_TagString: Untagged
@@ -7208,27 +6504,6 @@ Transform:
   - {fileID: 1457146122}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 22.303, z: 0}
---- !u!65 &761802181
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761802179}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &765107269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7362,37 +6637,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 771005454}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &771005453 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 771005452}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &771005454
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771005453}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &771005455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -7543,7 +6789,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802407342}
-  - component: {fileID: 802407343}
   m_Layer: 0
   m_Name: FlowerBed (2)
   m_TagString: Untagged
@@ -7567,27 +6812,6 @@ Transform:
   - {fileID: 2016735776}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -161.454, z: 0}
---- !u!65 &802407343
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802407341}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &806366489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7674,7 +6898,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 807878295}
-  - component: {fileID: 807878296}
   m_Layer: 0
   m_Name: BlueFlowerPot (8)
   m_TagString: Untagged
@@ -7699,27 +6922,6 @@ Transform:
   - {fileID: 1109344132}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -65.494, z: 0}
---- !u!65 &807878296
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807878294}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &809609175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7799,7 +7001,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809941101}
-  - component: {fileID: 809941102}
   m_Layer: 0
   m_Name: WhiteFlowerPot (20)
   m_TagString: Untagged
@@ -7824,27 +7025,6 @@ Transform:
   - {fileID: 730972887}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -140.669, z: 0}
---- !u!65 &809941102
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809941100}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &810829654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7990,7 +7170,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 831175573}
-  - component: {fileID: 831175574}
   m_Layer: 0
   m_Name: BlueFlowerPot (10)
   m_TagString: Untagged
@@ -8015,27 +7194,6 @@ Transform:
   - {fileID: 1949128428}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 3.975, z: 0}
---- !u!65 &831175574
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831175572}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &834037657
 GameObject:
   m_ObjectHideFlags: 0
@@ -8045,7 +7203,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 834037658}
-  - component: {fileID: 834037659}
   m_Layer: 0
   m_Name: PinkFlowerPot (2)
   m_TagString: Untagged
@@ -8070,27 +7227,6 @@ Transform:
   - {fileID: 1433503248}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -62.194, z: 0}
---- !u!65 &834037659
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834037657}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &845948088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8280,7 +7416,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 873369749}
-  - component: {fileID: 873369750}
   m_Layer: 0
   m_Name: WhiteFlowerPot (3)
   m_TagString: Untagged
@@ -8305,27 +7440,6 @@ Transform:
   - {fileID: 1691979600}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &873369750
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873369748}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &875844025
 GameObject:
   m_ObjectHideFlags: 0
@@ -8335,7 +7449,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 875844026}
-  - component: {fileID: 875844027}
   m_Layer: 0
   m_Name: WhiteFlowerPot (4)
   m_TagString: Untagged
@@ -8360,27 +7473,6 @@ Transform:
   - {fileID: 400559149}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 109.419, z: 0}
---- !u!65 &875844027
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875844025}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &880417039
 GameObject:
   m_ObjectHideFlags: 0
@@ -8390,7 +7482,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880417040}
-  - component: {fileID: 880417041}
   m_Layer: 0
   m_Name: YellowPOT (10)
   m_TagString: Untagged
@@ -8415,27 +7506,6 @@ Transform:
   - {fileID: 1661571570}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -37.97, z: 0}
---- !u!65 &880417041
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880417039}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &899789191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8640,7 +7710,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 909257337}
-  - component: {fileID: 909257338}
   m_Layer: 0
   m_Name: BlueFlowerBed (1)
   m_TagString: Untagged
@@ -8664,27 +7733,6 @@ Transform:
   - {fileID: 1531268452}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -42.396, z: 0}
---- !u!65 &909257338
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909257336}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &912782057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8788,7 +7836,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920435238}
-  - component: {fileID: 920435239}
   m_Layer: 0
   m_Name: YellowPOT (15)
   m_TagString: Untagged
@@ -8813,27 +7860,6 @@ Transform:
   - {fileID: 1504674721}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 144.387, z: 0}
---- !u!65 &920435239
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 920435237}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &923803119
 GameObject:
   m_ObjectHideFlags: 0
@@ -8843,7 +7869,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 923803120}
-  - component: {fileID: 923803121}
   m_Layer: 0
   m_Name: YellowPOT (4)
   m_TagString: Untagged
@@ -8868,27 +7893,6 @@ Transform:
   - {fileID: 2080931161}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 126.834, z: 0}
---- !u!65 &923803121
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923803119}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &925892939
 GameObject:
   m_ObjectHideFlags: 0
@@ -8898,7 +7902,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925892940}
-  - component: {fileID: 925892941}
   m_Layer: 0
   m_Name: BlueFlowerPot (2)
   m_TagString: Untagged
@@ -8923,27 +7926,6 @@ Transform:
   - {fileID: 2035491765}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 66.95, z: 0}
---- !u!65 &925892941
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925892939}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &927038843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9431,37 +8413,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 977189485}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &977189484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 977189483}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &977189485
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977189484}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &977189486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -9611,37 +8564,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 988974304}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &988974303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 988974302}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &988974304
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988974303}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.83938986, y: 0.8393899, z: 0.83938986}
-  m_Center: {x: -0.00006990134, y: -0.0018192977, z: -0.000033110377}
 --- !u!4 &988974305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -9730,7 +8654,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1000500044}
-  - component: {fileID: 1000500045}
   m_Layer: 0
   m_Name: PinkFlowerPot
   m_TagString: Untagged
@@ -9755,27 +8678,6 @@ Transform:
   - {fileID: 1950631838}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1000500045
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000500043}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1004424674
 GameObject:
   m_ObjectHideFlags: 0
@@ -9785,7 +8687,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1004424675}
-  - component: {fileID: 1004424676}
   m_Layer: 0
   m_Name: PinkFlowerPot (4)
   m_TagString: Untagged
@@ -9810,27 +8711,6 @@ Transform:
   - {fileID: 845948089}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -14.152, z: 0}
---- !u!65 &1004424676
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004424674}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1020095281
 GameObject:
   m_ObjectHideFlags: 0
@@ -9840,7 +8720,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020095282}
-  - component: {fileID: 1020095283}
   m_Layer: 0
   m_Name: YellowPOT (1)
   m_TagString: Untagged
@@ -9865,27 +8744,6 @@ Transform:
   - {fileID: 912782058}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 61.434, z: 0}
---- !u!65 &1020095283
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020095281}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1022089774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10093,7 +8951,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038637234}
-  - component: {fileID: 1038637235}
   m_Layer: 0
   m_Name: WhiteFlowerPot
   m_TagString: Untagged
@@ -10118,27 +8975,6 @@ Transform:
   - {fileID: 765107270}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1038637235
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038637233}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1046620118
 GameObject:
   m_ObjectHideFlags: 0
@@ -10661,7 +9497,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093682240}
-  - component: {fileID: 1093682241}
   m_Layer: 0
   m_Name: BlueFlowerPot
   m_TagString: Untagged
@@ -10686,27 +9521,6 @@ Transform:
   - {fileID: 556345024}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 10.199, z: 0}
---- !u!65 &1093682241
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093682239}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1096277795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10852,7 +9666,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1108739201}
-  - component: {fileID: 1108739202}
   m_Layer: 0
   m_Name: FlowerBed (7)
   m_TagString: Untagged
@@ -10876,27 +9689,6 @@ Transform:
   - {fileID: 2096178540}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -79.817, z: 0}
---- !u!65 &1108739202
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108739200}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1109344131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11038,37 +9830,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1121658336}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1121658335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1121658334}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1121658336
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121658335}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.83939004, y: 0.8393899, z: 0.83939004}
-  m_Center: {x: -0.000069901354, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &1121658337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -11262,7 +10025,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1137895219}
-  - component: {fileID: 1137895220}
   m_Layer: 0
   m_Name: YellowPOT (13)
   m_TagString: Untagged
@@ -11287,27 +10049,6 @@ Transform:
   - {fileID: 960711506}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 137.865, z: 0}
---- !u!65 &1137895220
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137895218}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1140317037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11375,37 +10116,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1140317039}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1140317038 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1140317037}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1140317039
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140317038}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.83938974, y: 0.8393899, z: 0.83938974}
-  m_Center: {x: -0.00006990133, y: -0.0018192977, z: -0.000033110373}
 --- !u!4 &1140317040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -11539,6 +10251,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5519912822105809527, guid: 5c13bd5898fb7ac458aeb153e36e0ded, type: 3}
   m_PrefabInstance: {fileID: 1145351589}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1152547950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1152547952}
+  - component: {fileID: 1152547951}
+  m_Layer: 0
+  m_Name: Nav Mesh Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1152547951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152547950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_Size: {x: 4.969765, y: 0.8089347, z: 0.70570135}
+  m_Center: {x: -0.4848826, y: -0.81345606, z: 0.15289664}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
+--- !u!4 &1152547952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152547950}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.98138, y: 1.23408, z: 6.69721}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1166626575
 GameObject:
   m_ObjectHideFlags: 0
@@ -11998,37 +10759,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1190492457}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &1190492456 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 1190492455}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1190492457
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190492456}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1190492458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -12043,7 +10775,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1191434740}
-  - component: {fileID: 1191434741}
   m_Layer: 0
   m_Name: YellowPOT (16)
   m_TagString: Untagged
@@ -12068,27 +10799,6 @@ Transform:
   - {fileID: 2041933440}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 138.843, z: 0}
---- !u!65 &1191434741
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191434739}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1193847484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12156,37 +10866,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1193847486}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1193847485 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1193847484}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1193847486
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193847485}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &1193847487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -12259,37 +10940,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1200857613}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1200857612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1200857611}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1200857613
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200857612}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &1200857614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -12368,6 +11020,251 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400007716819830313, guid: 4fb6a1cefde41e64491651381c765e29, type: 3}
   m_PrefabInstance: {fileID: 1203533601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1208463706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 146712878}
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328181381648374855, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_text
+      value: 'Looks like the spider is running loose...
+
+        Try to find and
+        catch it!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_fontSize
+      value: 16.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_margin.w
+      value: -26.085339
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_margin.x
+      value: -23.781061
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_margin.z
+      value: -42.795845
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497111600398713012, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534458713606674525, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534458713606674525, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534458713606674525, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534458713606674525, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 99.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534458713606674525, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -34.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748085739164865953, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_Name
+      value: Panel_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748085739164865953, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 271.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 108.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.099999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.917
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.088
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402196757262084615, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_text
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402196757262084615, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_fontSize
+      value: 17.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402196757262084615, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402196757262084615, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 17.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549280469761796937, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549280469761796937, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549280469761796937, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549280469761796937, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549280469761796937, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8981198547946527359, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8981198547946527359, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8981198547946527359, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 20.7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+--- !u!1 &1208463707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4748085739164865953, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+  m_PrefabInstance: {fileID: 1208463706}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1226262502
 GameObject:
@@ -12534,6 +11431,7 @@ Transform:
   - {fileID: 988974305}
   - {fileID: 1963218148}
   - {fileID: 1244597991}
+  - {fileID: 648124192}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226436117
@@ -12545,7 +11443,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1226436118}
-  - component: {fileID: 1226436119}
   m_Layer: 0
   m_Name: FlowerBed (5)
   m_TagString: Untagged
@@ -12569,27 +11466,6 @@ Transform:
   - {fileID: 706349003}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -250.268, z: 0}
---- !u!65 &1226436119
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226436117}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1228872980
 GameObject:
   m_ObjectHideFlags: 0
@@ -12631,7 +11507,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1229253785}
-  - component: {fileID: 1229253786}
   m_Layer: 0
   m_Name: BlueFlowerBed (10)
   m_TagString: Untagged
@@ -12655,27 +11530,6 @@ Transform:
   - {fileID: 1384435150}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -24.507, z: 0}
---- !u!65 &1229253786
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229253784}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1231459563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12747,7 +11601,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1232205222}
-  - component: {fileID: 1232205223}
   m_Layer: 0
   m_Name: BlueFlowerPot (4)
   m_TagString: Untagged
@@ -12772,27 +11625,6 @@ Transform:
   - {fileID: 1902600035}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 66.95, z: 0}
---- !u!65 &1232205223
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232205221}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1232903449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12860,37 +11692,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1232903451}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &1232903450 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 1232903449}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1232903451
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232903450}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1232903452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -13168,6 +11971,50 @@ Transform:
   - {fileID: 1524302726}
   m_Father: {fileID: 591133734}
   m_LocalEulerAnglesHint: {x: 0, y: 42.37, z: 0}
+--- !u!1 &1261261750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261261751}
+  - component: {fileID: 1261261752}
+  m_Layer: 0
+  m_Name: Point (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1261261751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261261750}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.769, y: 0.22444999, z: 1.778}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766532132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1261261752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261261750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7513d7fc3c0e54980852af331774b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1261605294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13235,37 +12082,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1261605296}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1261605295 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1261605294}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1261605296
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261605295}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &1261605297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -13280,7 +12098,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1272575911}
-  - component: {fileID: 1272575912}
   m_Layer: 0
   m_Name: WhiteFlowerPot (14)
   m_TagString: Untagged
@@ -13305,27 +12122,6 @@ Transform:
   - {fileID: 1090463358}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 30.725, z: 0}
---- !u!65 &1272575912
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272575910}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1272699451
 GameObject:
   m_ObjectHideFlags: 0
@@ -13335,7 +12131,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1272699452}
-  - component: {fileID: 1272699453}
   m_Layer: 0
   m_Name: PinkFlowerPot (5)
   m_TagString: Untagged
@@ -13360,27 +12155,6 @@ Transform:
   - {fileID: 1425815994}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -129.64, z: 0}
---- !u!65 &1272699453
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272699451}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1276411128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13510,37 +12284,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1286507547}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &1286507546 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 1286507545}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1286507547
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286507546}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1286507548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -13555,7 +12300,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286519218}
-  - component: {fileID: 1286519219}
   m_Layer: 0
   m_Name: BlueFlowerBed (7)
   m_TagString: Untagged
@@ -13579,27 +12323,6 @@ Transform:
   - {fileID: 577301531}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -42.396, z: 0}
---- !u!65 &1286519219
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286519217}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1286869001
 GameObject:
   m_ObjectHideFlags: 0
@@ -13609,7 +12332,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286869002}
-  - component: {fileID: 1286869003}
   m_Layer: 0
   m_Name: BlueFlowerPot (5)
   m_TagString: Untagged
@@ -13634,27 +12356,6 @@ Transform:
   - {fileID: 2113442055}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 160.118, z: 0}
---- !u!65 &1286869003
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286869001}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1292266877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13873,7 +12574,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1314414399}
-  - component: {fileID: 1314414400}
   m_Layer: 0
   m_Name: BlueFlowerPot (11)
   m_TagString: Untagged
@@ -13898,27 +12598,6 @@ Transform:
   - {fileID: 859982590}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -89.941, z: 0}
---- !u!65 &1314414400
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314414398}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1338196602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14005,7 +12684,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1342682860}
-  - component: {fileID: 1342682861}
   m_Layer: 0
   m_Name: FlowerBed
   m_TagString: Untagged
@@ -14029,27 +12707,6 @@ Transform:
   - {fileID: 472426673}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1342682861
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342682859}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1345865070
 GameObject:
   m_ObjectHideFlags: 0
@@ -14059,7 +12716,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1345865071}
-  - component: {fileID: 1345865072}
   m_Layer: 0
   m_Name: FlowerBed (1)
   m_TagString: Untagged
@@ -14083,27 +12739,6 @@ Transform:
   - {fileID: 1905074079}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -79.817, z: 0}
---- !u!65 &1345865072
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345865070}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1352225454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14264,37 +12899,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1369472979}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1369472978 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1369472977}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1369472979
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369472978}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.83939004, y: 0.8393899, z: 0.83939004}
-  m_Center: {x: -0.000069901354, y: -0.0018192977, z: -0.000033110384}
 --- !u!4 &1369472980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -14716,7 +13322,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1383783623}
-  - component: {fileID: 1383783624}
   m_Layer: 0
   m_Name: BlueFlowerBed (6)
   m_TagString: Untagged
@@ -14740,27 +13345,6 @@ Transform:
   - {fileID: 604015395}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 25.631, z: 0}
---- !u!65 &1383783624
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383783622}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1384435149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14901,7 +13485,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1390913477}
-  - component: {fileID: 1390913478}
   m_Layer: 0
   m_Name: PinkFlowerPot (8)
   m_TagString: Untagged
@@ -14926,27 +13509,6 @@ Transform:
   - {fileID: 1084118341}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -73.821, z: 0}
---- !u!65 &1390913478
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390913476}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1413662366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15535,37 +14097,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1449497733}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1449497732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1449497731}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1449497733
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1449497732}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.83939004, y: 0.8393899, z: 0.83939004}
-  m_Center: {x: -0.000069901354, y: -0.0018192977, z: -0.00003311038}
 --- !u!4 &1449497734 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -16158,37 +14691,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1488231132}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &1488231131 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 1488231130}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1488231132
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488231131}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1488231133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -16528,7 +15032,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1532559070}
-  - component: {fileID: 1532559071}
   m_Layer: 0
   m_Name: WhiteFlowerPot (7)
   m_TagString: Untagged
@@ -16553,27 +15056,6 @@ Transform:
   - {fileID: 1529032654}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -121.674, z: 0}
---- !u!65 &1532559071
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532559069}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1543988132
 GameObject:
   m_ObjectHideFlags: 0
@@ -16586,6 +15068,7 @@ GameObject:
   - component: {fileID: 1543988135}
   - component: {fileID: 1543988134}
   - component: {fileID: 1543988133}
+  - component: {fileID: 1543988137}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -16683,6 +15166,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1543988137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543988132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1544327229
 GameObject:
   m_ObjectHideFlags: 0
@@ -16692,7 +15195,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544327230}
-  - component: {fileID: 1544327231}
   m_Layer: 0
   m_Name: PinkFlowerPot (9)
   m_TagString: Untagged
@@ -16717,27 +15219,6 @@ Transform:
   - {fileID: 1181617566}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -118.296, z: 0}
---- !u!65 &1544327231
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544327229}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1548557156
 GameObject:
   m_ObjectHideFlags: 0
@@ -16747,7 +15228,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1548557157}
-  - component: {fileID: 1548557158}
   m_Layer: 0
   m_Name: BlueFlowerPot (7)
   m_TagString: Untagged
@@ -16772,27 +15252,6 @@ Transform:
   - {fileID: 1928442764}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 116.035, z: 0}
---- !u!65 &1548557158
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548557156}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1553021097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17070,7 +15529,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1597527644}
-  - component: {fileID: 1597527645}
   m_Layer: 0
   m_Name: WhiteFlowerPot (8)
   m_TagString: Untagged
@@ -17095,27 +15553,6 @@ Transform:
   - {fileID: 1246982525}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -1.203, z: 0}
---- !u!65 &1597527645
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597527643}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1603698843
 GameObject:
   m_ObjectHideFlags: 0
@@ -17125,7 +15562,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603698844}
-  - component: {fileID: 1603698845}
   m_Layer: 0
   m_Name: WhiteFlowerPot (16)
   m_TagString: Untagged
@@ -17150,27 +15586,6 @@ Transform:
   - {fileID: 335219002}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -15.514, z: 0}
---- !u!65 &1603698845
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603698843}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1611858431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17328,7 +15743,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1627614385}
-  - component: {fileID: 1627614386}
   m_Layer: 0
   m_Name: BlueFlowerBed (3)
   m_TagString: Untagged
@@ -17352,27 +15766,6 @@ Transform:
   - {fileID: 186538310}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 10.436, z: 0}
---- !u!65 &1627614386
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627614384}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1627703458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17448,7 +15841,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1630540665}
-  - component: {fileID: 1630540666}
   m_Layer: 0
   m_Name: BlueFlowerBed (5)
   m_TagString: Untagged
@@ -17472,27 +15864,6 @@ Transform:
   - {fileID: 409654141}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -12.098, z: 0}
---- !u!65 &1630540666
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630540664}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1635311554
 GameObject:
   m_ObjectHideFlags: 0
@@ -17502,7 +15873,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1635311555}
-  - component: {fileID: 1635311556}
   m_Layer: 0
   m_Name: FlowerBed (6)
   m_TagString: Untagged
@@ -17526,27 +15896,6 @@ Transform:
   - {fileID: 1129516752}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1635311556
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635311554}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1637263932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17863,6 +16212,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5519912822105809527, guid: 5c13bd5898fb7ac458aeb153e36e0ded, type: 3}
   m_PrefabInstance: {fileID: 1661571569}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1661706994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1661706995}
+  - component: {fileID: 1661706996}
+  m_Layer: 0
+  m_Name: Point (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1661706995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661706994}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.437, y: 0.22444999, z: -0.782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766532132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661706996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661706994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7513d7fc3c0e54980852af331774b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1672567293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18016,7 +16409,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680888395}
-  - component: {fileID: 1680888396}
   m_Layer: 0
   m_Name: BlueFlowerBed (11)
   m_TagString: Untagged
@@ -18040,27 +16432,6 @@ Transform:
   - {fileID: 1612102224}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -12.098, z: 0}
---- !u!65 &1680888396
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680888394}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1681970263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18210,7 +16581,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696804564}
-  - component: {fileID: 1696804565}
   m_Layer: 0
   m_Name: WhiteFlowerPot (12)
   m_TagString: Untagged
@@ -18235,27 +16605,6 @@ Transform:
   - {fileID: 952680402}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -1.203, z: 0}
---- !u!65 &1696804565
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696804563}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1697369328
 GameObject:
   m_ObjectHideFlags: 0
@@ -18503,37 +16852,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1699185122}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1699185121 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1699185120}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1699185122
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699185121}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &1699185123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -18680,37 +17000,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1709110117}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1709110116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1709110115}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1709110117
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709110116}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393898, y: 0.8393899, z: 0.8393898}
-  m_Center: {x: -0.00006990134, y: -0.0018192977, z: -0.000033110377}
 --- !u!4 &1709110118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -18857,37 +17148,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1713978128}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &1713978127 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 1713978126}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1713978128
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713978127}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1713978129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -18964,7 +17226,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1720563852}
-  - component: {fileID: 1720563853}
   m_Layer: 0
   m_Name: BlueFlowerBed (4)
   m_TagString: Untagged
@@ -18988,27 +17249,6 @@ Transform:
   - {fileID: 271619894}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -24.507, z: 0}
---- !u!65 &1720563853
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720563851}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1727445388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19080,7 +17320,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1727556056}
-  - component: {fileID: 1727556057}
   m_Layer: 0
   m_Name: WhiteFlowerPot (17)
   m_TagString: Untagged
@@ -19105,27 +17344,6 @@ Transform:
   - {fileID: 1948014031}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -165.907, z: 0}
---- !u!65 &1727556057
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727556055}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1731767025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19193,42 +17411,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1731767027}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &1731767026 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 1731767025}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1731767027
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731767026}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &1731767028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
   m_PrefabInstance: {fileID: 1731767025}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1766532131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766532132}
+  m_Layer: 0
+  m_Name: SpiderTPPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1766532132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766532131}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.62298, y: 0.03097, z: -1.23484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 713504853}
+  - {fileID: 1661706995}
+  - {fileID: 1261261751}
+  - {fileID: 1811320621}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1770462243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19502,7 +17726,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1796063457}
-  - component: {fileID: 1796063458}
   m_Layer: 0
   m_Name: BlueFlowerPot (12)
   m_TagString: Untagged
@@ -19527,27 +17750,6 @@ Transform:
   - {fileID: 1096277796}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -202.222, z: 0}
---- !u!65 &1796063458
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796063456}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1797111460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19622,6 +17824,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400007716819830313, guid: 4fb6a1cefde41e64491651381c765e29, type: 3}
   m_PrefabInstance: {fileID: 1797111460}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1811320620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811320621}
+  - component: {fileID: 1811320622}
+  m_Layer: 0
+  m_Name: Point (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1811320621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811320620}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.326, y: 0.22444999, z: -5.68}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766532132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1811320622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811320620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7513d7fc3c0e54980852af331774b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1816295584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19778,7 +18024,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1828434251}
-  - component: {fileID: 1828434252}
   m_Layer: 0
   m_Name: FlowerBed (8)
   m_TagString: Untagged
@@ -19802,27 +18047,6 @@ Transform:
   - {fileID: 297040644}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -161.454, z: 0}
---- !u!65 &1828434252
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828434250}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1837549284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20030,7 +18254,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1858772346}
-  - component: {fileID: 1858772347}
   m_Layer: 0
   m_Name: WhiteFlowerPot (9)
   m_TagString: Untagged
@@ -20055,27 +18278,6 @@ Transform:
   - {fileID: 1913844401}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -35.561, z: 0}
---- !u!65 &1858772347
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858772345}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1870874334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20143,37 +18345,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1870874336}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &1870874335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 1870874334}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1870874336
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870874335}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1870874337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -20188,7 +18361,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870952620}
-  - component: {fileID: 1870952621}
   m_Layer: 0
   m_Name: YellowPOT (7)
   m_TagString: Untagged
@@ -20213,27 +18385,6 @@ Transform:
   - {fileID: 226507718}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 87.571, z: 0}
---- !u!65 &1870952621
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870952619}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1875877789
 GameObject:
   m_ObjectHideFlags: 0
@@ -20243,7 +18394,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1875877790}
-  - component: {fileID: 1875877791}
   m_Layer: 0
   m_Name: PinkFlowerPot (7)
   m_TagString: Untagged
@@ -20268,27 +18418,6 @@ Transform:
   - {fileID: 2037886203}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -95.958, z: 0}
---- !u!65 &1875877791
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875877789}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1886363490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21550,7 +19679,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953752632}
-  - component: {fileID: 1953752633}
   m_Layer: 0
   m_Name: FlowerBed (10)
   m_TagString: Untagged
@@ -21574,27 +19702,6 @@ Transform:
   - {fileID: 128177094}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -216.367, z: 0}
---- !u!65 &1953752633
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953752631}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1963218145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21662,37 +19769,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1779273420919075183, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1963218147}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
---- !u!1 &1963218146 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1779273420919075183, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
-  m_PrefabInstance: {fileID: 1963218145}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1963218147
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963218146}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1963218148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1439725897100602325, guid: a67e779c78dcc4248a77e08825f9afa1, type: 3}
@@ -21707,7 +19785,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1965509025}
-  - component: {fileID: 1965509026}
   m_Layer: 0
   m_Name: YellowPOT (3)
   m_TagString: Untagged
@@ -21737,27 +19814,6 @@ Transform:
   - {fileID: 810829655}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 65.132, z: 0}
---- !u!65 &1965509026
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965509024}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1970350501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21895,37 +19951,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1993881337}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
---- !u!1 &1993881336 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 401787387530271858, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
-  m_PrefabInstance: {fileID: 1993881335}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1993881337
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993881336}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1993881338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1069815109721327304, guid: 992cc71a372fd68429190dc5d826a2ed, type: 3}
@@ -21940,7 +19967,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2001096722}
-  - component: {fileID: 2001096723}
   m_Layer: 0
   m_Name: WhiteFlowerPot (15)
   m_TagString: Untagged
@@ -21965,27 +19991,6 @@ Transform:
   - {fileID: 1382032071}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 59.459, z: 0}
---- !u!65 &2001096723
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001096721}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2003866144
 GameObject:
   m_ObjectHideFlags: 0
@@ -22027,7 +20032,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2004044758}
-  - component: {fileID: 2004044759}
   m_Layer: 0
   m_Name: BlueFlowerPot (2)
   m_TagString: Untagged
@@ -22052,27 +20056,6 @@ Transform:
   - {fileID: 1171451705}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 66.95, z: 0}
---- !u!65 &2004044759
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004044757}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2016735775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22156,7 +20139,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2025771349}
-  - component: {fileID: 2025771350}
   m_Layer: 0
   m_Name: YellowPOT (8)
   m_TagString: Untagged
@@ -22181,27 +20163,6 @@ Transform:
   - {fileID: 1025754161}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -37.97, z: 0}
---- !u!65 &2025771350
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025771348}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2026804287
 GameObject:
   m_ObjectHideFlags: 0
@@ -22300,37 +20261,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2027906799}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
---- !u!1 &2027906798 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311899073365131186, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
-  m_PrefabInstance: {fileID: 2027906797}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2027906799
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027906798}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.8393901, y: 0.8393899, z: 0.8393901}
-  m_Center: {x: -0.00006990136, y: -0.0018192977, z: -0.000033110387}
 --- !u!4 &2027906800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2791644648776393992, guid: 458f794dac465fd4e86e63e49aeaae9c, type: 3}
@@ -22625,7 +20557,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2050669441}
-  - component: {fileID: 2050669442}
   m_Layer: 0
   m_Name: WhiteFlowerPot (18)
   m_TagString: Untagged
@@ -22650,27 +20581,6 @@ Transform:
   - {fileID: 178786694}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -165.907, z: 0}
---- !u!65 &2050669442
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2050669440}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2058525220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22808,7 +20718,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063147389}
-  - component: {fileID: 2063147390}
   m_Layer: 0
   m_Name: WhiteFlowerPot (6)
   m_TagString: Untagged
@@ -22833,27 +20742,6 @@ Transform:
   - {fileID: 1145305920}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: -85.321, z: 0}
---- !u!65 &2063147390
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063147388}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2066376602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22925,7 +20813,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078227562}
-  - component: {fileID: 2078227563}
   m_Layer: 0
   m_Name: YellowPOT (9)
   m_TagString: Untagged
@@ -22950,27 +20837,6 @@ Transform:
   - {fileID: 1913646178}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 8.115, z: 0}
---- !u!65 &2078227563
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078227561}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2080931160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23223,7 +21089,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2108277114}
-  - component: {fileID: 2108277115}
   m_Layer: 0
   m_Name: YellowPOT
   m_TagString: Untagged
@@ -23248,27 +21113,6 @@ Transform:
   - {fileID: 1782083209}
   m_Father: {fileID: 1226262503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2108277115
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108277113}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2113442054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23524,9 +21368,11 @@ SceneRoots:
   - {fileID: 1543988136}
   - {fileID: 901237396}
   - {fileID: 174826111}
+  - {fileID: 1152547952}
   - {fileID: 2102804674}
   - {fileID: 624102905}
   - {fileID: 1226262503}
-  - {fileID: 648124187}
   - {fileID: 1166626576}
   - {fileID: 1384602798}
+  - {fileID: 1208463706}
+  - {fileID: 1766532132}
