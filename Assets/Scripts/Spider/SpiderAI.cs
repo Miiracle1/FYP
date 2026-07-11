@@ -11,6 +11,9 @@ public partial class SpiderAI : MonoBehaviour
 
     public SpiderMode mode;
 
+    private float moveAnimationSpeed;
+    private float defaultAnimationSpeed;
+
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
 
@@ -27,11 +30,14 @@ public partial class SpiderAI : MonoBehaviour
     void Start()
     {
         GetHandReference();
+        moveAnimationSpeed = 3.47f;
 
         if (mode == SpiderMode.Game)
         {
             StartPhase1();
         }
+
+        defaultAnimationSpeed = animator.speed;
     }
 
     void Update()
@@ -57,12 +63,18 @@ public partial class SpiderAI : MonoBehaviour
         }
     }
 
+    
     private void OnAnimatorMove()
     {
-         //let agent speed match animation
+        //let agent speed match animation
         if (animator.GetBool("Move"))
+        {
+            //agent.speed = (animator.deltaPosition / Time.deltaTime).magnitude;
+            animator.speed = agent.speed / moveAnimationSpeed;
+        }
+        else
         { 
-            agent.speed = (animator.deltaPosition / Time.deltaTime).magnitude;
+            animator.speed = defaultAnimationSpeed;
         }
     }
 
