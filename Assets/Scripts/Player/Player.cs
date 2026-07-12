@@ -6,6 +6,13 @@ public partial class Player : MonoBehaviour
     [SerializeField] private float FOV = 0.6f;
 
     private bool isAttachingSpider = false;
+    private bool isGrabbingSpider = false;
+
+    public bool IsGrabbingSpider
+    {  
+        get { return isGrabbingSpider; } 
+        set { isGrabbingSpider = value; }
+    }
 
     /***************************************************************************************************************************************************************************************/
     // Unity Methods

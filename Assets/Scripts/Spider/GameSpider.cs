@@ -14,7 +14,9 @@ public partial class SpiderAI
 
     private bool isGrabbed = false;
     private bool isAttached = false;
+    public SpiderRoomCollider currentRoom;
 
+    public bool spottedPlayer = false; //extra bool to use in phase 1
     public bool justEnteredPhase2 = false;
     public static event Action OnPhase2Start;
     public static event Action OnPhase2End;
@@ -46,6 +48,7 @@ public partial class SpiderAI
 
     public void EnterPhase2()
     {
+        spottedPlayer = false;
         justEnteredPhase2 = false;
         phase2 = true;
         OnPhase2Start?.Invoke();

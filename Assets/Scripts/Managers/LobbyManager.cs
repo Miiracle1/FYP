@@ -18,10 +18,12 @@ public class LobbyManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else
+        if (instance != null && instance != this)
+        {
             Destroy(gameObject);
+            return;
+        }
+        instance = this;
     }
 
     private void Start()
@@ -35,16 +37,15 @@ public class LobbyManager : MonoBehaviour
         }
 
         // Use player pref to track if player caught spider in game
-        if (PlayerPrefs.HasKey("Got Spider") && lobbySpider != null && spawnArea != null)
+        if (PlayerPrefs.GetString("Got Spider") == "True" && lobbySpider != null && spawnArea != null)
         {
-            if (PlayerPrefs.GetString("Got Spider") == "True")
-            {
-                Instantiate(lobbySpider, spawnArea.transform.position, Quaternion.identity);
-            }
+            Instantiate(lobbySpider, spawnArea.transform.position, Quaternion.identity);
         }
 
         GameProgressTracker.Scene = SceneEnums.Lobby;
         GameProgressTracker.GameState = GameStateEnums.Lobby;
+
+        SceneLoader.instance.ForceReset();
     }
 
     /***************************************************************************************************************************************************************************************/

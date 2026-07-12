@@ -26,6 +26,9 @@ namespace Spider.BT
 
 		public override TaskStatus OnUpdate()
 		{
+			if (spider.spottedPlayer == true)
+				return TaskStatus.Failure;
+
 			return TaskStatus.Success;
 		}
 	}

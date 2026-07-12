@@ -17,23 +17,20 @@ public class SceneLoader : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        if (instance != null && instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        { 
             Destroy(gameObject);
             return;
         }
+        instance = this;
     }
 
     /***************************************************************************************************************************************************************************************/
     //Methods
 
     public void LoadScene(string sceneName)
-    { 
+    {
+        Debug.Log("Scene loader is loading = " + isLoading);
         if (!isLoading)
         {
             StartCoroutine(LoadSceneSequence(sceneName));
@@ -53,17 +50,34 @@ public class SceneLoader : MonoBehaviour
         if (loadOperation == null)
         {
             Debug.LogError($"Failed to load scene: {targetScene}");
+            isLoading = false;
             yield break;
         }
 
-        while (!loadOperation.isDone)
+        if (loadOperation.isDone)
         {
-            yield return null;
+            isLoading = false;
+            Debug.Log("Loading Completed");
+            yield break;
+        }
+
+        yield return loadOperation;
+
+        if (loadOperation.isDone)
+        {
+            isLoading = false;
+            Debug.Log("Loading Completed");
+            yield break;
         }
 
         Debug.Log("Laoding should be done");
 
         //onLoadingCompleted?.Invoke();
+        isLoading = false;
+    }
+
+    public void ForceReset()
+    {
         isLoading = false;
     }
 }

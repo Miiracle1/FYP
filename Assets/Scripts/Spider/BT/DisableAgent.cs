@@ -28,8 +28,7 @@ namespace Spider.BT
 
         private void StopAgent()
         { 
-            agent.isStopped = true;
-            agent.path = null;
+            //agent.isStopped = true;
 
             if (grabState && spider.IsGrabbed == false)
                 spider.SetGrabbed(true);

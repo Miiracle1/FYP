@@ -19,7 +19,7 @@ namespace Spider.BT
             spider = GetComponent<SpiderAI>();
             agent = GetComponent<NavMeshAgent>();
 
-            Vector3 destination = transform.position + (transform.forward * -1) * escapeDistance;
+            Vector3 destination = transform.position + (transform.forward) * escapeDistance;
 
             agent.isStopped = false;
             agent.SetDestination(destination);

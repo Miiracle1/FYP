@@ -30,13 +30,12 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else
-        { 
+        if (instance != null && instance != this)
+        {
             Destroy(gameObject);
             return;
         }
+        instance = this;
     }
 
     void Start()
@@ -45,6 +44,8 @@ public class GameManager : MonoBehaviour
             dynamicMoveProvider.enabled = false;
 
         Phase2Points = FindObjectsByType<Phase2Points>(FindObjectsSortMode.None);
+
+        SceneLoader.instance.ForceReset();
     }
 
     private void OnEnable()
@@ -99,6 +100,9 @@ public class GameManager : MonoBehaviour
 
         if (fadeCanvas != null)
             fadeCanvas.FadeIn();
+
+        Debug.Log("Current Game Progress =" + GameProgressTracker.GameState);
+        Debug.Log("Current Player Pref = " + PlayerPrefs.GetString("Tutorial"));
 
         // If first time playing and win current level go next level
         if (GameProgressTracker.GameState == GameStateEnums.Victory && PlayerPrefs.GetString("Tutorial") == "True" && GameProgressTracker.Scene != SceneEnums.Greenhouse)

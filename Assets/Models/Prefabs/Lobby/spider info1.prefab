@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -535101833045563696, guid: f5c514b44af96db4382482ab7f7e19f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 275906795802824834, guid: f5c514b44af96db4382482ab7f7e19f4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -56,10 +60,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: spider info1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f5c514b44af96db4382482ab7f7e19f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1983864856652021327, guid: f5c514b44af96db4382482ab7f7e19f4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: e1bf8acba8a98b44e9cd088b53d15a30, type: 2}
+    - target: {fileID: 2124169227900743285, guid: f5c514b44af96db4382482ab7f7e19f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2416397326189214708, guid: f5c514b44af96db4382482ab7f7e19f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6269827044816990866, guid: f5c514b44af96db4382482ab7f7e19f4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

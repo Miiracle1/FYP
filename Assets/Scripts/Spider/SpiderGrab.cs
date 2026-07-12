@@ -1,13 +1,22 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning;
 
 public class SpiderGrab : MonoBehaviour
 {
+    [Header("Rotation")]
+    [SerializeField] private InputActionReference rotateAction;
+    [SerializeField] private float rotateSpeed = 100f;
+
+    private SnapTurnProvider snapTurnProvider;
+
     private SpiderAI spider;
     private NavMeshAgent agent;
     private SpiderAttachPoint currentAttachPoint;
     private Player player;
+    private Quaternion originalRotation;
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
@@ -18,6 +27,28 @@ public class SpiderGrab : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
 
         player = FindAnyObjectByType<Player>();
+        snapTurnProvider = player.GetComponentInChildren<SnapTurnProvider>();
+    }
+
+    private void Update()
+    {
+        if (!spider.IsGrabbed) return;
+
+        Vector2 input = rotateAction.action.ReadValue<Vector2>();
+
+        //transform.Rotate(Vector3.up, input.x * rotateSpeed * Time.deltaTime, Space.World);
+
+        //transform.Rotate(Vector3.right, -input.y * rotateSpeed * Time.deltaTime, Space.World);
+    }
+
+    private void OnEnable()
+    {
+        rotateAction.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        rotateAction.action.Disable();
     }
 
     /***************************************************************************************************************************************************************************************/
@@ -29,17 +60,24 @@ public class SpiderGrab : MonoBehaviour
 
         if (spider.IsGrabbed) return;
 
+        snapTurnProvider.enabled = false;
+
+        originalRotation = transform.rotation;
         spider.SetAttached(false);
         player.SetAttachingSpider(false);
         agent.enabled = false;
         spider.SetGrabbed(true);
+        player.IsGrabbingSpider = true;
     }
 
     public void Release(SelectExitEventArgs args)
     {
         if (!spider.InGamePhase2) return;
 
+        snapTurnProvider.enabled = true;
+
         spider.SetGrabbed(false);
+        player.IsGrabbingSpider= false;
 
         if (currentAttachPoint != null)
         {
@@ -57,6 +95,7 @@ public class SpiderGrab : MonoBehaviour
         
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity;
+        transform.rotation = originalRotation;
 
         spider.SetAttached(true);
         player.SetAttachingSpider(true);
@@ -75,6 +114,7 @@ public class SpiderGrab : MonoBehaviour
         player.SetAttachingSpider(false);
         currentAttachPoint = null;
 
+        transform.rotation = originalRotation;
         agent.enabled = true;
         agent.Warp(transform.position);
     }

@@ -66,6 +66,7 @@ public partial class SpiderAI : MonoBehaviour
     
     private void OnAnimatorMove()
     {
+        if (IsGrabbed) return;
         //let agent speed match animation
         if (animator.GetBool("Move"))
         {

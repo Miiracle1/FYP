@@ -39,6 +39,8 @@ namespace Spider.BT
 				//waitingTime = lobbySpider.GetAnimationLength() //get the length of animation and pass it to wait task
 				waitingTime = 4f;
 
+				spider.spottedPlayer = true;
+
 				return TaskStatus.Success;
             }
 

@@ -11,7 +11,7 @@ public class WinGameTrigger : MonoBehaviour
         {
             if (other.TryGetComponent<Player>(out var player))
             {
-                if (player.GetAttachingSpider() == true)
+                if (player.GetAttachingSpider() == true || player.IsGrabbingSpider)
                 {
                     GameProgressTracker.GameState = GameStateEnums.Victory;
                 }

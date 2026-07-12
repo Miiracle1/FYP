@@ -23,6 +23,9 @@ namespace Spider.BT
         {
             agent = GetComponent<NavMeshAgent>();
             spider = GetComponent<SpiderAI>();
+
+            if (spider.IsGrabbed || spider.IsAttached) return;
+
             agent.isStopped = false;
 
             agent.SetDestination(targetPos.Value);
@@ -37,7 +40,7 @@ namespace Spider.BT
         {
             timer -= Time.deltaTime;
 
-            if (timer <= 0f)
+            if (timer <= 0f || spider.IsGrabbed || spider.IsAttached)
             {
                 return TaskStatus.Success;
             }
@@ -91,11 +94,6 @@ namespace Spider.BT
             }
 
             return TaskStatus.Running;
-        }
-        public override void OnEnd()
-        {
-            spider.StopMoveAnim();
-            agent.isStopped = true;
         }
     }
 }
