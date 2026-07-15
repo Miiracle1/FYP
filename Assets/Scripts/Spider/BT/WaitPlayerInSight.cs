@@ -27,16 +27,13 @@ namespace spider.BT
 
 		public override void OnStart()
 		{
-            playerHead = Camera.main.transform;
-
             spider = GetComponent<SpiderAI>();
 			agent = GetComponent<NavMeshAgent>();
 		}
 
         public override TaskStatus OnUpdate()
         {
-            if (playerHead == null)
-                return TaskStatus.Failure;
+            playerHead = Camera.main.transform;
 
             if (Time.time < nextCheckTime)
                 return TaskStatus.Running;

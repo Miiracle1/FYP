@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.203, y: -0.08, z: 3.93239}
-  m_LocalScale: {x: 12.1, y: 11.778396, z: 11.778396}
+  m_LocalScale: {x: 7.1, y: 6.9112897, z: 6.9112897}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8917964417220575369}
@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possiblePositions: []
+  currentRoom: {fileID: 0}
   spottedPlayer: 0
   justEnteredPhase2: 0
   animator: {fileID: 5036952059022424144}
@@ -173,6 +174,9 @@ MonoBehaviour:
   movingClip: {fileID: 0}
   escapeAmount: 1
   handTrackDistance: 0
+  idleSFXClip: {fileID: 0}
+  scaredSFXClip: {fileID: 0}
+  moveSFXClip: {fileID: 0}
 --- !u!114 &177307538934505341
 MonoBehaviour:
   m_ObjectHideFlags: 0

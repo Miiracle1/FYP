@@ -888,6 +888,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 966106575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &415803222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415803223}
+  m_Layer: 0
+  m_Name: Spawn Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &415803223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415803222}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.352369, y: 0, z: 23.46026}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 761138434}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &489026647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1755,7 +1786,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 415803223}
   m_Father: {fileID: 720276298}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &761138435
@@ -1770,8 +1802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3181039316d699499c389935367e61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lobbySpider: {fileID: 0}
-  spawnArea: {fileID: 0}
+  lobbySpider: {fileID: 2405326508948765084, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
+  spawnArea: {fileID: 415803222}
 --- !u!1001 &880491388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2645,7 +2677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4826,7 +4858,7 @@ Transform:
   m_GameObject: {fileID: 1779679201}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071308, y: -0, z: -0, w: -0.70708287}
-  m_LocalPosition: {x: -0.32, y: 5.9900002, z: 28.22}
+  m_LocalPosition: {x: -0.32, y: 5.140258, z: 28.219942}
   m_LocalScale: {x: 5.703083, y: 5.7030826, z: 9.083301}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4992,7 +5024,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 15
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -10451,7 +10483,7 @@ ParticleSystem:
   m_GameObject: {fileID: 2125828049}
   serializedVersion: 8
   lengthInSec: 5
-  simulationSpeed: 0.5
+  simulationSpeed: 0.6
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -11279,7 +11311,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -15960,22 +15992,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 613100037}
     m_Modifications:
-    - target: {fileID: 2256552914886053060, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
-      propertyPath: m_Speed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2256552914886053060, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
-      propertyPath: m_Acceleration
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2256552914886053060, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
-      propertyPath: m_AngularSpeed
-      value: 540
-      objectReference: {fileID: 0}
-    - target: {fileID: 2256552914886053060, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 2405326508948765084, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
       propertyPath: m_Name
       value: Lobby Spider
