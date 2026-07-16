@@ -20,6 +20,7 @@ namespace Spider.BT
         [SerializeField] private Vector2 pauseDuration = new(0.15f, 0.4f);
 
         private NavMeshAgent agent;
+        private float originalSpeed;
         private bool running;
         private float timer;
 
@@ -27,7 +28,9 @@ namespace Spider.BT
         {
             agent = GetComponent<NavMeshAgent>();
 
-            agent.speed = escapeSpeed;
+            originalSpeed = agent.speed;
+
+            agent.speed *= 3f;
 
             agent.isStopped = false;
 
@@ -49,27 +52,22 @@ namespace Spider.BT
 
             timer -= Time.deltaTime;
 
-            if (running)
+            if (timer <= 0f && running)
             {
-                if (timer <= 0f)
-                {
-                    running = false;
+                running = false;
 
-                    agent.isStopped = true;
+                agent.isStopped = true;
 
-                    timer = Random.Range(pauseDuration.x, pauseDuration.y);
-                }
+                timer = Random.Range(pauseDuration.x, pauseDuration.y);
             }
-            else
+
+            if (!running && timer <= 0f)
             {
-                if (timer <= 0f)
-                {
-                    running = true;
+                running = true;
 
-                    agent.isStopped = false;
+                agent.isStopped = false;
 
-                    timer = Random.Range(runDuration.x, runDuration.y);
-                }
+                timer = Random.Range(runDuration.x, runDuration.y);
             }
 
             return TaskStatus.Running;
@@ -77,6 +75,7 @@ namespace Spider.BT
 
         public override void OnEnd()
         {
+            agent.speed = originalSpeed;
             agent.isStopped = false;
         }
     }

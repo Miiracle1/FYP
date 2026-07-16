@@ -6,6 +6,9 @@ public partial class SpiderAI
     [SerializeField] private AnimationClip idleClip;
     [SerializeField] private AnimationClip movingClip;
 
+    [Header("Sockets")]
+    [SerializeField] private GameObject headSocket;
+
     /***************************************************************************************************************************************************************************************/
     //Public Methods
 
@@ -63,5 +66,13 @@ public partial class SpiderAI
     private void StopMove()
     {
         animator.SetBool("Move", false);
+    }
+
+    /***************************************************************************************************************************************************************************************/
+    //Sockets
+
+    public GameObject GetHeadSocket()
+    {
+        return headSocket;
     }
 }

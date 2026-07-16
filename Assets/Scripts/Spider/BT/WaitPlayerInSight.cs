@@ -13,6 +13,7 @@ namespace spider.BT
 		[SerializeField] private float fov = 100f;
 		[SerializeField] private float viewDistance = 4f;
 		[SerializeField] private LayerMask visibleLayerMask;
+        [SerializeField] private float requiredLookTime = 0.5f;
 
         [Range(0f, 1f)]
         public float playerLookThreshold = 0.9f;
@@ -24,8 +25,9 @@ namespace spider.BT
 
         private SpiderAI spider;
 		private NavMeshAgent agent;
+        private float lookTimer;
 
-		public override void OnStart()
+        public override void OnStart()
 		{
             spider = GetComponent<SpiderAI>();
 			agent = GetComponent<NavMeshAgent>();
@@ -33,14 +35,27 @@ namespace spider.BT
 
         public override TaskStatus OnUpdate()
         {
+            /*
             playerHead = Camera.main.transform;
 
             if (Time.time < nextCheckTime)
                 return TaskStatus.Running;
 
-            nextCheckTime = Time.time + checkInterval;
+            nextCheckTime = Time.time + checkInterval;*/
 
-            return SpiderCanSeePlayer() && PlayerLookingAtSpider() ? TaskStatus.Success : TaskStatus.Running;
+            if (PlayerCanSeeSpider())
+            {
+                lookTimer += Time.deltaTime;
+
+                if (lookTimer >= requiredLookTime)
+                    return TaskStatus.Success;
+            }
+            else
+            {
+                lookTimer = 0f;
+            }
+
+            return TaskStatus.Running;
         }
 
         private bool SpiderCanSeePlayer()
@@ -78,6 +93,33 @@ namespace spider.BT
             float dot = Vector3.Dot(playerHead.forward, toSpider);
 
             return dot >= playerLookThreshold;
+        }
+
+        private bool PlayerCanSeeSpider()
+        {
+            Vector3 toSpider = transform.position - playerHead.position;
+
+            float distance = toSpider.magnitude;
+
+            if (distance > viewDistance)
+                return false;
+
+            float angle = Vector3.Angle(playerHead.forward, toSpider);
+
+            if (angle > fov * 0.5f)
+                return false;
+
+            if (Physics.Raycast(
+                    playerHead.position,
+                    toSpider.normalized,
+                    out RaycastHit hit,
+                    distance,
+                    visibleLayerMask))
+            {
+                return hit.transform == transform;
+            }
+
+            return false;
         }
     }
 }

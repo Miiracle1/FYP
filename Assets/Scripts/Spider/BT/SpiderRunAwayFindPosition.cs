@@ -25,13 +25,19 @@ namespace Spider.BT
 
 		public override TaskStatus OnUpdate()
 		{
-            for (int i = 0; i < searchLimit; i++)
+            var bounds = spider.currentRoom.roomBound.bounds;
+
+            const int maxAttempts = 20;
+
+            for (int i = 0; i < maxAttempts; i++)
             {
-                Vector3 random = transform.position + Random.insideUnitSphere * searchRadius;
+                Vector3 randomDirection = new(Random.Range(bounds.min.x, bounds.max.x), transform.position.y,
+                    Random.Range(bounds.min.z, bounds.max.z));
 
-                random.y = transform.position.y;
+                if (Vector3.Distance(transform.position, randomDirection) > searchRadius)
+                    continue;
 
-                if (NavMesh.SamplePosition(random, out NavMeshHit hit, 2f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(randomDirection, out NavMeshHit hit, 2f, NavMesh.AllAreas))
                 {
                     escapePoint.Value = hit.position;
                     return TaskStatus.Success;

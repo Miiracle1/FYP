@@ -6600,6 +6600,18 @@ PrefabInstance:
       value: Game Spider
       objectReference: {fileID: 0}
     - target: {fileID: 7437052082125287739, guid: 08637e8c36edd674daf0ff3e0203f949, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437052082125287739, guid: 08637e8c36edd674daf0ff3e0203f949, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7618918
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437052082125287739, guid: 08637e8c36edd674daf0ff3e0203f949, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7618918
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437052082125287739, guid: 08637e8c36edd674daf0ff3e0203f949, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.008092
       objectReference: {fileID: 0}

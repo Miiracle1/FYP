@@ -1,11 +1,11 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class HoldInteractDoor : MonoBehaviour
 {
     [SerializeField] private float holdDuration = 2f;
+    [SerializeField] private float earlyFadeTimer = 1.5f;
 
     public SceneEnums currentScene;
     public SceneEnums nextScene;
@@ -24,6 +24,11 @@ public class HoldInteractDoor : MonoBehaviour
             return;
 
         timer += Time.deltaTime;
+
+        if (timer >= earlyFadeTimer)
+        { 
+            StartFadeEarly();
+        }
 
         if (timer >= holdDuration)
         {
@@ -77,5 +82,13 @@ public class HoldInteractDoor : MonoBehaviour
     public void ForceComplete()
     {
         OnHoldComplete();
+    }
+
+    private void StartFadeEarly()
+    {
+        FadeCanvas fadeCanvas = FindFirstObjectByType<FadeCanvas>();
+
+        if (fadeCanvas != null)
+            fadeCanvas.FadeIn();
     }
 }

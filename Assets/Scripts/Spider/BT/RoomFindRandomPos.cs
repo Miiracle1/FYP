@@ -21,16 +21,26 @@ namespace Spider.BT
 
         public override TaskStatus OnUpdate()
         {
-            var bounds = spider.currentRoom.roomBound.bounds;
+            Bounds bounds = spider.currentRoom.roomBound.bounds;
 
-            Vector3 randomDirection = new(Random.Range(bounds.min.x, bounds.max.x), 
-                transform.position.y, 
-                Random.Range(bounds.min.z, bounds.max.z));
+            const int maxAttempts = 20;
 
-            if (NavMesh.SamplePosition(randomDirection, out var hit, radius, NavMesh.AllAreas))
+            for (int i = 0; i < maxAttempts; i++)
             {
-                targetPosition.Value = hit.position;
-                return TaskStatus.Success;
+                Vector3 randomPosition = new(
+                    Random.Range(bounds.min.x, bounds.max.x),
+                    transform.position.y,
+                    Random.Range(bounds.min.z, bounds.max.z));
+
+                // Too far away? Try another point.
+                if (Vector3.Distance(transform.position, randomPosition) > radius)
+                    continue;
+
+                if (NavMesh.SamplePosition(randomPosition, out NavMeshHit hit, 1f, NavMesh.AllAreas))
+                {
+                    targetPosition.Value = hit.position;
+                    return TaskStatus.Success;
+                }
             }
 
             return TaskStatus.Failure;

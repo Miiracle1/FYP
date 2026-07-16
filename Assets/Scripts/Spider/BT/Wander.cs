@@ -9,26 +9,43 @@ namespace Spider.BT
     [TaskDescription("Move to Position from shared Vector3 variable. Also stops when timer reach max move time.")]
     public class Wander : Action
     {
+        [Header("Settings")]
         [SerializeField] private float rotateSpeed = 360f;
         [SerializeField] private float angleThreshold = 110f;
         [SerializeField] private float maxMoveTime = 3f;
+        [SerializeField] private float sprintChance = 35f;
+        [SerializeField] private float sprintSpeedRatio = 2f;
 
         public SharedVector3 targetPos;
 
         private float timer;
+        private float originalSpeed;
+        private float originalAnimatorSpeed;
+        private bool isSprinting = false;
         private NavMeshAgent agent;
         private SpiderAI spider;
+        private Animator animator;
 
         public override void OnStart()
         {
             agent = GetComponent<NavMeshAgent>();
             spider = GetComponent<SpiderAI>();
+            animator = spider.GetAnimatorReference();
 
             if (spider.IsGrabbed || spider.IsAttached) return;
 
             agent.isStopped = false;
 
             agent.SetDestination(targetPos.Value);
+
+            if (RandomSprintChance() && isSprinting == false)
+            {
+                isSprinting = true;
+                originalSpeed = agent.speed;
+                originalAnimatorSpeed = animator.speed;
+                agent.speed *= sprintSpeedRatio;
+                animator.speed *= sprintSpeedRatio;
+            }
 
             spider.PlayMoveAnim();
 
@@ -58,7 +75,7 @@ namespace Spider.BT
 
             // Get the next point the NavMeshAgent wants to move toward.
             Vector3 direction = agent.steeringTarget - transform.position;
-            direction.y = 0f;
+            direction.y = transform.position.y;
 
             if (direction.sqrMagnitude > 0.001f)
             {
@@ -71,10 +88,7 @@ namespace Spider.BT
 
                     Quaternion targetRotation = Quaternion.LookRotation(direction);
 
-                    transform.rotation = Quaternion.RotateTowards(
-                        transform.rotation,
-                        targetRotation,
-                        rotateSpeed * Time.deltaTime);
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
                 }
                 else
                 {
@@ -82,18 +96,22 @@ namespace Spider.BT
                 }
             }
 
-
             return TaskStatus.Running;
+        }
 
+        public override void OnEnd()
+        {
+            animator.speed = originalAnimatorSpeed;
+            agent.speed = originalSpeed;
+            isSprinting = false;
+            agent.isStopped = true;
+        }
 
-            if (!agent.pathPending && agent.remainingDistance <= 0.2f)
-            {
-                agent.isStopped = true;
-                agent.ResetPath();
-                return TaskStatus.Success;
-            }
+        private bool RandomSprintChance()
+        {
+            var chance = Random.Range(0f, 100f);
 
-            return TaskStatus.Running;
+            return chance <= sprintChance;
         }
     }
 }
