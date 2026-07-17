@@ -7757,6 +7757,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 3187659804632190622, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
+      propertyPath: m_Antialiasing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187659804632190622, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3215955827568019873, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 18
@@ -7796,6 +7804,10 @@ PrefabInstance:
     - target: {fileID: 8949019446464652195, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183366263743325073, guid: b4af92aaace3517419f4c646e87f6aa0, type: 3}
+      propertyPath: far clip plane
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
