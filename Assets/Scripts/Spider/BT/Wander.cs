@@ -44,8 +44,8 @@ namespace Spider.BT
                 isSprinting = true;
                 originalSpeed = agent.speed;
                 originalAnimatorSpeed = animator.speed;
-                agent.speed = agent.speed * sprintSpeedRatio;
-                animator.speed = animator.speed = sprintSpeedRatio;
+                agent.speed *= sprintSpeedRatio;
+                animator.speed *= sprintSpeedRatio;
             }
 
             spider.PlayMoveAnim();
@@ -109,6 +109,7 @@ namespace Spider.BT
             animator.speed = originalAnimatorSpeed;
             agent.speed = spider.GetDefaultAgentSpeed();
             isSprinting = false;
+            spider.StopMoveAnim();
 
             if (agent.isOnNavMesh)
                 agent.isStopped = true;

@@ -9,6 +9,7 @@ namespace Spider.BT
 	public class RandomIdle : Action
 	{
 		[SerializeField] private float chance = 40f;
+		[SerializeField] private bool forcePlay = false;
 
 		private SpiderAI spider;
 
@@ -26,6 +27,9 @@ namespace Spider.BT
 
 		public override TaskStatus OnUpdate()
 		{
+			if (forcePlay)
+				return TaskStatus.Success;
+
 			if (spider.spottedPlayer == true)
 				return TaskStatus.Failure;
 

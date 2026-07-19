@@ -23,6 +23,7 @@ namespace Spider.BT
             agent.isStopped = false;
             agent.SetDestination(destination);
             spider.PlayMoveAnim();
+            agent.speed *= 2f;
         }
 
         public override TaskStatus OnUpdate()
@@ -38,6 +39,13 @@ namespace Spider.BT
             }
 
             return TaskStatus.Running;
+        }
+
+        public override void OnEnd()
+        {
+            agent.speed = spider.GetDefaultAgentSpeed();
+            if (agent.isOnNavMesh)
+                agent.isStopped = true;
         }
     }
 }
