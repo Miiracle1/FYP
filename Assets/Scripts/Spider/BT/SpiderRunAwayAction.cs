@@ -76,7 +76,7 @@ namespace Spider.BT
         public override void OnEnd()
         {
             agent.speed = originalSpeed;
-            agent.isStopped = false;
+            agent.isStopped = true;
         }
     }
 }

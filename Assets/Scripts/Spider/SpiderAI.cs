@@ -11,6 +11,7 @@ public partial class SpiderAI : MonoBehaviour
 
     public SpiderMode mode;
 
+    private float defaultAgentMoveSpeed;
     private float moveAnimationSpeed;
     private float defaultAnimationSpeed;
 
@@ -29,8 +30,9 @@ public partial class SpiderAI : MonoBehaviour
 
     void Start()
     {
-        GetHandReference();
-        moveAnimationSpeed = 3.47f;
+        //GetHandReference();
+        moveAnimationSpeed = movingClip.apparentSpeed;
+        defaultAgentMoveSpeed = agent.speed;
 
         if (mode == SpiderMode.Game)
         {
@@ -38,13 +40,20 @@ public partial class SpiderAI : MonoBehaviour
         }
 
         defaultAnimationSpeed = animator.speed;
+
+        
     }
 
     void Update()
     {
-        animator.SetBool("Move", agent.velocity.magnitude > 0.1f); // Constantly checking spider velocity to play move animation
+        animator.SetBool("Move", agent.velocity.magnitude > 0.01f); // Constantly checking spider velocity to play move animation
 
-        CheckHandDistance();
+        //CheckHandDistance();
+
+        if (mode == SpiderMode.Lobby || InGamePhase2)
+        {
+            UpdateGaze();
+        }
     }
 
     private void OnEnable()
@@ -66,7 +75,8 @@ public partial class SpiderAI : MonoBehaviour
     
     private void OnAnimatorMove()
     {
-        if (IsGrabbed) return;
+        if (IsGrabbed || isAttached) return;
+
         //let agent speed match animation
         if (animator.GetBool("Move"))
         {
@@ -84,6 +94,11 @@ public partial class SpiderAI : MonoBehaviour
         if (!animator) return null;
         
         return animator;
+    }
+
+    public float GetDefaultAgentSpeed()
+    { 
+        return defaultAgentMoveSpeed;
     }
 }
 

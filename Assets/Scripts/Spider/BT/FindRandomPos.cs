@@ -19,11 +19,9 @@ namespace Spider.BT
 
             randomDirection += transform.position;
 
-            NavMeshHit hit;
-
             if (NavMesh.SamplePosition(
                 randomDirection,
-                out hit,
+                out NavMeshHit hit,
                 radius,
                 NavMesh.AllAreas))
             {

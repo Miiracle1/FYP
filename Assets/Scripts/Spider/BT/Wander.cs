@@ -35,6 +35,7 @@ namespace Spider.BT
             if (spider.IsGrabbed || spider.IsAttached) return;
 
             agent.isStopped = false;
+            agent.speed = spider.GetDefaultAgentSpeed();
 
             agent.SetDestination(targetPos.Value);
 
@@ -43,8 +44,8 @@ namespace Spider.BT
                 isSprinting = true;
                 originalSpeed = agent.speed;
                 originalAnimatorSpeed = animator.speed;
-                agent.speed *= sprintSpeedRatio;
-                animator.speed *= sprintSpeedRatio;
+                agent.speed = agent.speed * sprintSpeedRatio;
+                animator.speed = animator.speed = sprintSpeedRatio;
             }
 
             spider.PlayMoveAnim();
@@ -57,6 +58,12 @@ namespace Spider.BT
         {
             timer -= Time.deltaTime;
 
+            if (spider.mode == SpiderMode.Lobby)
+            { 
+                if (spider.GazeCompleted)
+                    return TaskStatus.Success;
+            }
+
             if (timer <= 0f || spider.IsGrabbed || spider.IsAttached)
             {
                 return TaskStatus.Success;
@@ -68,8 +75,6 @@ namespace Spider.BT
             // Make sure agent almost reach to end of path to continue branch
             if (agent.remainingDistance <= 0.1f)
             {
-                //agent.isStopped = true;
-                //agent.ResetPath();
                 return TaskStatus.Success;
             }
 
@@ -102,9 +107,11 @@ namespace Spider.BT
         public override void OnEnd()
         {
             animator.speed = originalAnimatorSpeed;
-            agent.speed = originalSpeed;
+            agent.speed = spider.GetDefaultAgentSpeed();
             isSprinting = false;
-            agent.isStopped = true;
+
+            if (agent.isOnNavMesh)
+                agent.isStopped = true;
         }
 
         private bool RandomSprintChance()

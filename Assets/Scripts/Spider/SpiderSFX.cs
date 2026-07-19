@@ -20,7 +20,17 @@ public partial class SpiderAI
     {
         if (scaredSFXClip == null) return;
 
-        SFXManager.PlaySfxClip(scaredSFXClip, transform);
+        SFXManager.instance.PlayClipAtTransform(scaredSFXClip, transform);
+    }
+
+    /// <summary>
+    /// Plays move clip at spider transform.
+    /// </summary>
+    public void PlayMoveClip()
+    { 
+        if (moveSFXClip == null) return;
+
+        SFXManager.instance.PlayClipAtTransform(moveSFXClip, transform);
     }
 
 }

@@ -16,7 +16,6 @@ public partial class SpiderAI
     /// </summary>
     private void GetHandReference()
     {
-        return;
         var xrOrigin = FindFirstObjectByType<XROrigin>();
 
         var camTransform = xrOrigin.Camera.transform;

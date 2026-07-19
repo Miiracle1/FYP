@@ -28,7 +28,8 @@ namespace Spider.BT
 
         private void StopAgent()
         { 
-            //agent.isStopped = true;
+            if (agent.isOnNavMesh)
+                agent.isStopped = true;
 
             if (grabState && spider.IsGrabbed == false)
                 spider.SetGrabbed(true);

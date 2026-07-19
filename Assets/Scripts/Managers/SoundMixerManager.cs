@@ -73,4 +73,9 @@ public class SoundMixerManager : MonoBehaviour
         audioMixer.SetFloat("narratorVolume", Mathf.Log10(volume) * 20f);
         PlayerPrefs.SetFloat("NarratorVolume", volume);
     }
+
+    public AudioMixer GetAudioMixer()
+    { 
+        return audioMixer;
+    }
 }

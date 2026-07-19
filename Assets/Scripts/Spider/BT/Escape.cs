@@ -12,7 +12,6 @@ namespace Spider.BT
 
         private SpiderAI spider;
         private NavMeshAgent agent;
-        private Quaternion targetRotation;
 
         public override void OnStart()
         {
@@ -36,18 +35,6 @@ namespace Spider.BT
                 spider.SetPhase2();
                 spider.StopMoveAnim();
                 return TaskStatus.Success;
-            }
-
-            return TaskStatus.Running;
-
-            // Dont know this approach work or not
-            if (agent.remainingDistance <= agent.stoppingDistance)
-            {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude < 0.01f)
-                {
-                    //animator.SetBool("Walk", false);
-                    return TaskStatus.Success;
-                }
             }
 
             return TaskStatus.Running;

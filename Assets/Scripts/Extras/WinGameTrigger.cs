@@ -14,6 +14,7 @@ public class WinGameTrigger : MonoBehaviour
                 if (player.GetAttachingSpider() == true || player.IsGrabbingSpider)
                 {
                     GameProgressTracker.GameState = GameStateEnums.Victory;
+                    PlayerPrefs.SetString("Got Spider", "True");
                 }
             }
         }

@@ -11,23 +11,30 @@ namespace Spider.BT
     {
         [SerializeField] private float requiredGazeTime = 0.6f;
         [SerializeField] private float rotationThreshold = 5f;
+
         [SerializeField]
         [Range(0f, 1f)]
         private float gazeThreshold = 0.95f;
-        public float rotationSpeed = 360f;
+        [SerializeField] public float rotationSpeed = 360f;
 
         private SpiderAI spider;
         private Transform player;
+        private NavMeshAgent agent;
         private Transform head;
         private float gazeTimer;
+        private Quaternion targetRotation;
+        private bool targetRotationSet;
 
         public override void OnStart()
         {
             spider = GetComponent<SpiderAI>();
+            agent = GetComponent<NavMeshAgent>();
 
             head = spider.GetHeadSocket().transform;
             player = Camera.main.transform;
+
             gazeTimer = 0f;
+            targetRotationSet = false;
         }
 
         public override TaskStatus OnUpdate()
@@ -59,22 +66,28 @@ namespace Spider.BT
             {
                 return TaskStatus.Running;
             }
-            
-            // Rotate lobbySpider to player camera position
-            Vector3 direction = player.position - head.position;
 
-            direction.y = 0f;
-
-            if (direction.sqrMagnitude > 0.01f)
-            { 
-                var targetRotation = Quaternion.LookRotation(direction);
-
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-                if (Quaternion.Angle(transform.rotation, targetRotation) <= rotationThreshold)
+            // Pick a random turn direction once
+            if (!targetRotationSet)
+            {
+                int random = Random.Range(0, 3);
+                var randomAngle = random switch
                 {
-                    return TaskStatus.Success;
-                }
+                    0 => -90f, // Left
+                    1 => 90f,  // Right
+                    _ => 180f, // Back
+                };
+                targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y + randomAngle, 0f);
+
+                targetRotationSet = true;
+            }
+
+            // Rotate towards chosen direction
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+            if (Quaternion.Angle(transform.rotation, targetRotation) <= rotationThreshold)
+            {
+                return TaskStatus.Success;
             }
 
             return TaskStatus.Running;
@@ -83,6 +96,8 @@ namespace Spider.BT
         public override void OnEnd()
         {
             gazeTimer = 0f;
+            targetRotationSet = false;
+            agent.speed = spider.GetDefaultAgentSpeed();
         }
     }
 }

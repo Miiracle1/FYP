@@ -36,9 +36,9 @@ public class SpiderGrab : MonoBehaviour
 
         Vector2 input = rotateAction.action.ReadValue<Vector2>();
 
-        //transform.Rotate(Vector3.up, input.x * rotateSpeed * Time.deltaTime, Space.World);
+        transform.Rotate(Vector3.up, input.x * rotateSpeed * Time.deltaTime, Space.World);
 
-        //transform.Rotate(Vector3.right, -input.y * rotateSpeed * Time.deltaTime, Space.World);
+        transform.Rotate(Vector3.right, -input.y * rotateSpeed * Time.deltaTime, Space.World);
     }
 
     private void OnEnable()
@@ -56,7 +56,8 @@ public class SpiderGrab : MonoBehaviour
 
     public void Grab(SelectEnterEventArgs args)
     {
-        if (!spider.InGamePhase2) return;
+        if (spider.mode == SpiderMode.Game)
+            if (!spider.InGamePhase2) return;
 
         if (spider.IsGrabbed) return;
 
@@ -72,7 +73,8 @@ public class SpiderGrab : MonoBehaviour
 
     public void Release(SelectExitEventArgs args)
     {
-        if (!spider.InGamePhase2) return;
+        if (spider.mode == SpiderMode.Game)
+            if (!spider.InGamePhase2) return;
 
         snapTurnProvider.enabled = true;
 

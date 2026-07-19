@@ -21,9 +21,11 @@ namespace Spider.BT
 
         public override TaskStatus OnUpdate()
         {
+            if (GameProgressTracker.Scene != SceneEnums.Garage) return TaskStatus.Success;
+
             Bounds bounds = spider.currentRoom.roomBound.bounds;
 
-            const int maxAttempts = 20;
+            const int maxAttempts = 30;
 
             for (int i = 0; i < maxAttempts; i++)
             {
