@@ -30,7 +30,9 @@ namespace Spider.BT
 
             stuckTimer = 0f;
             isPaused = false;
-            stateTimer = Random.Range(runTimeRange.x, runTimeRange.y);
+            stateTimer = 0.3f;
+
+            if (spider.IsGrabbed || spider.IsAttached) return;
 
             agent.isStopped = false;
             agent.speed = spider.GetDefaultAgentSpeed() * escapeSpeedRatio;
@@ -49,6 +51,8 @@ namespace Spider.BT
 
         public override TaskStatus OnUpdate()
         {
+            if (spider.IsGrabbed || spider.IsAttached) return TaskStatus.Success;
+
             stateTimer -= Time.deltaTime;
 
             if (stateTimer <= 0f)
@@ -95,7 +99,9 @@ namespace Spider.BT
         {
             spider.StopMoveAnim();
             agent.speed = spider.GetDefaultAgentSpeed();
-            agent.isStopped = true;
+
+            if (agent.isOnNavMesh)
+                agent.isStopped = true;
         }
     }
 }

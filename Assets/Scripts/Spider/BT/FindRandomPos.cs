@@ -14,6 +14,9 @@ namespace Spider.BT
 
         public override TaskStatus OnUpdate()
         {
+            if (GameProgressTracker.Scene == SceneEnums.Garage)
+                return TaskStatus.Success;
+
             Vector3 randomDirection =
                 Random.insideUnitSphere * radius;
 

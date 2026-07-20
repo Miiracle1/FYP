@@ -1809,6 +1809,7 @@ GameObject:
   - component: {fileID: 761138434}
   - component: {fileID: 761138435}
   - component: {fileID: 761138436}
+  - component: {fileID: 761138437}
   m_Layer: 0
   m_Name: Lobby_Manager
   m_TagString: Untagged
@@ -1846,6 +1847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lobbySpider: {fileID: 2405326508948765084, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
   spawnArea: {fileID: 415803222}
+  greenhouseDoor: {fileID: 1533337500}
+  greenhouseUI: {fileID: 1644203480}
 --- !u!114 &761138436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,6 +1862,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 5c2834c3648f2d3468c3b2e5171ef743, type: 2}
+--- !u!114 &761138437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761138433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41bc1bf9fda312b40851f2a1c0b40450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reset: 0
 --- !u!1001 &880491388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5254,6 +5270,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3549359340089148837, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
   m_PrefabInstance: {fileID: 1616976194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1644203480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4748085739164865953, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+  m_PrefabInstance: {fileID: 1283331255}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1662815951
 PrefabInstance:

@@ -8,6 +8,12 @@ public class DevCheat : MonoBehaviour
     [Header("Cheats")]
     [SerializeField] private bool reset = false;
 
+    private void Start()
+    {
+        if (reset)
+            ResetPlayerPrefs();
+    }
+
     public bool HardReset
     {
         get => reset;
@@ -22,5 +28,6 @@ public class DevCheat : MonoBehaviour
     private void ResetPlayerPrefs()
     {
         PlayerPrefs.SetString("Tutorial", "True");
+        PlayerPrefs.SetString("Got Spider", "False");
     }
 }

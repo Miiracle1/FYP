@@ -8,6 +8,10 @@ public class LobbyManager : MonoBehaviour
     [SerializeField] private GameObject lobbySpider;
     [SerializeField] private GameObject spawnArea;
 
+    [Header("Door")]
+    [SerializeField] private GameObject greenhouseDoor;
+    [SerializeField] private GameObject greenhouseUI;
+
     public static LobbyManager instance;
     private SceneEnums nextScene;
 
@@ -28,17 +32,30 @@ public class LobbyManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Teasting scene loader instance" + SceneLoader.instance);
-
         // Use player pref to track if first time playing
         if (!PlayerPrefs.HasKey("Tutorial"))
         {
             PlayerPrefs.SetString("Tutorial", "True");
+            greenhouseDoor.SetActive(false);
+            greenhouseUI.SetActive(false);
+            Debug.Log("Set Player pref tutorial to true");
         }
+
+        if (PlayerPrefs.GetString("Tutorial") == "True")
+        {
+            greenhouseDoor.SetActive(false);
+            greenhouseUI.SetActive(false);
+        }
+
+        Debug.Log("Player pref tutorial is " + PlayerPrefs.GetString("Tutorial"));
+        Debug.Log("player pref got spider is " + PlayerPrefs.GetString("Got Spider"));
 
         // Use player pref to track if player caught spider in game
         if (PlayerPrefs.GetString("Got Spider") == "True" && lobbySpider != null && spawnArea != null)
         {
+            Debug.Log("Should spawn spider");
+            greenhouseDoor.SetActive(true);
+            greenhouseUI.SetActive(true);
             Instantiate(lobbySpider, spawnArea.transform.position, Quaternion.identity);
         }
 
@@ -70,7 +87,7 @@ public class LobbyManager : MonoBehaviour
 
         if (PlayerPrefs.GetString("Tutorial") == "True")
         {
-            //nextScene = SceneEnums.Garage;
+            scene = SceneEnums.Garage;
         }
 
         GameProgressTracker.Scene = scene;

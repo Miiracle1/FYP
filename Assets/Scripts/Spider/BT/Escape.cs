@@ -18,6 +18,9 @@ namespace Spider.BT
             spider = GetComponent<SpiderAI>();
             agent = GetComponent<NavMeshAgent>();
 
+            if (GameProgressTracker.Scene == SceneEnums.Greenhouse)
+                escapeDistance -= 1f;
+
             Vector3 destination = transform.position + (transform.forward) * escapeDistance;
 
             agent.isStopped = false;
