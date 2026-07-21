@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.14364265
+      value: 0.12976623
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1420,7 +1420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.22311158
+      value: 0.16718282
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3036,7 +3036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.3020854
+      value: 0.21677773
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4296,7 +4296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.14364265
+      value: 0.08480755
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6742,7 +6742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.22060055
+      value: 0.15899995
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7674,7 +7674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.29916415
+      value: 0.22247104
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8603,7 +8603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.13763738
+      value: 0.16224864
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8856,7 +8856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.21810366
+      value: 0.14324649
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11422,7 +11422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.14364265
+      value: 0.1155636
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11928,7 +11928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5627137773616687233, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.3020854
+      value: 0.18590334
       objectReference: {fileID: 0}
     - target: {fileID: 8542036451241822849, guid: 7afe2d4a8a589d448a1c6d247f0456fc, type: 3}
       propertyPath: m_StaticEditorFlags
