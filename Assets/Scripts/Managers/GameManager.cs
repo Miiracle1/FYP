@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
 
         foreach (var point in Phase2Points)
         {
-            Instantiate(indicator, point.transform.position + new Vector3(0,heightOffset,0), Quaternion.Euler(0f,0f,0f), transform);
+            Instantiate(indicator, point.transform.position + new Vector3(0,heightOffset,0), Quaternion.Euler(-90f,0f,0f), transform);
         }
     }
 

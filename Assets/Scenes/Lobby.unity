@@ -1037,7 +1037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &524422795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1325,7 +1325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &726532816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bc1bf9fda312b40851f2a1c0b40450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reset: 0
+  reset: 1
 --- !u!1001 &880491388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2036,6 +2036,10 @@ PrefabInstance:
     - target: {fileID: 2405326508948765084, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
       propertyPath: m_Name
       value: Lobby Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2405326508948765084, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3889141034007277351, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3421,6 +3425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Spider
       objectReference: {fileID: 0}
+    - target: {fileID: 278774557279309012, guid: 08637e8c36edd674daf0ff3e0203f949, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 833513046492959851, guid: 08637e8c36edd674daf0ff3e0203f949, type: 3}
       propertyPath: mode
       value: 0
@@ -3713,7 +3721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1532358438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4734,6 +4742,18 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3549359340089148837, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 58.56562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549359340089148837, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 58.56562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549359340089148837, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 82.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549359340089148837, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.09719914
       objectReference: {fileID: 0}
@@ -4772,6 +4792,10 @@ PrefabInstance:
     - target: {fileID: 3549359340089148837, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549359340089148837, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3570340502397795580, guid: 1f35560e38e838141ac998123ed1a4dd, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10730,7 +10754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1973760946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11356,7 +11380,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -16565,6 +16589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Example_Button_Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 4748085739164865953, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6453620975307928417, guid: 06252c1c954a63545898ea9fee7f8223, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16889,17 +16917,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lobby Spider
       objectReference: {fileID: 0}
+    - target: {fileID: 2405326508948765084, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3889141034007277351, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.095064
+      value: -6.1241155
       objectReference: {fileID: 0}
     - target: {fileID: 3889141034007277351, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79
+      value: 0.4443456
       objectReference: {fileID: 0}
     - target: {fileID: 3889141034007277351, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 23.153402
+      value: 23.86156
       objectReference: {fileID: 0}
     - target: {fileID: 3889141034007277351, guid: f4e36d6f976f8864ab5d7d0e29ab5356, type: 3}
       propertyPath: m_LocalRotation.w
