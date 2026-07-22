@@ -14,6 +14,7 @@ public partial class SpiderAI : MonoBehaviour
     private float defaultAgentMoveSpeed;
     private float moveAnimationSpeed;
     private float defaultAnimationSpeed;
+    public Animator animator;
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
@@ -53,6 +54,11 @@ public partial class SpiderAI : MonoBehaviour
         {
             UpdateGaze();
         }
+
+        float currentSpeed = agent.speed;
+        animator.SetFloat("Speed", currentSpeed);
+
+
     }
 
     private void OnEnable()
