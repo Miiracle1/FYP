@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
 
     private void ShowIndicator()
     {
-        if (indicatorCoroutine != null)
+        if (indicatorCoroutine != null && indicator != null)
             StopCoroutine(indicatorCoroutine);
 
         indicatorCoroutine = StartCoroutine(IndicatorRoutine());

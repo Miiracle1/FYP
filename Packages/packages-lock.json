@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.kybernetik.animancer": {
+      "version": "file:com.kybernetik.animancer",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.modules.animation": "1.0.0"
+      }
+    },
     "com.marijnzwemmer.unity-toolbar-extender": {
       "version": "file:com.marijnzwemmer.unity-toolbar-extender",
       "depth": 0,

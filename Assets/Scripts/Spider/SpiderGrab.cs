@@ -62,7 +62,7 @@ public class SpiderGrab : MonoBehaviour
         if (spider.IsGrabbed) return;
 
         snapTurnProvider.enabled = false;
-
+        spider.StopAllAnim();
         originalRotation = transform.rotation;
         spider.SetAttached(false);
         player.SetAttachingSpider(false);
@@ -89,6 +89,7 @@ public class SpiderGrab : MonoBehaviour
         {
             ReturnToGround();
         }
+        spider.StopAllAnim();
     }
 
     private void AttachToPoint(SpiderAttachPoint point)

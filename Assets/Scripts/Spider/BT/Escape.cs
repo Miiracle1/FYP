@@ -23,6 +23,7 @@ namespace Spider.BT
 
             Vector3 destination = transform.position + (transform.forward) * escapeDistance;
 
+            spider.ResetIdle();
             agent.isStopped = false;
             agent.SetDestination(destination);
             spider.PlayMoveAnim();

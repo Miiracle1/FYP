@@ -17,7 +17,6 @@ namespace Spider.BT
         {
             spider = GetComponent<SpiderAI>();
             agent = GetComponent<NavMeshAgent>();
-
             StopAgent();
         }
 
@@ -36,6 +35,8 @@ namespace Spider.BT
 
             if (!grabState && spider.IsAttached == false)
                 spider.SetAttached(true);
+
+            spider.StopAllAnim();
         }
     }
 }

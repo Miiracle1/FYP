@@ -77,6 +77,7 @@ namespace Spider.BT
                     1 => 90f,  // Right
                     _ => 180f, // Back
                 };
+
                 targetRotation = Quaternion.Euler(0f, transform.eulerAngles.y + randomAngle, 0f);
 
                 targetRotationSet = true;

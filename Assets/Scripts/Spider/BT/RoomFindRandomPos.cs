@@ -17,6 +17,8 @@ namespace Spider.BT
         public override void OnStart()
         {
             spider = GetComponent<SpiderAI>();
+
+            spider.ResetIdle();
         }
 
         public override TaskStatus OnUpdate()

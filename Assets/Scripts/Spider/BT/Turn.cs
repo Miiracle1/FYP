@@ -21,6 +21,7 @@ namespace Spider.BT
 
             targetRotation = transform.rotation * Quaternion.Euler(0f, 180f, 0f);
 
+            spider.ResetIdle();
             spider.PlayMoveAnim();
         }
 

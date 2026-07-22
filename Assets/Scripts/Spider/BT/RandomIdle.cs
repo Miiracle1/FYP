@@ -19,7 +19,7 @@ namespace Spider.BT
 
 			var randomNum = Random.Range(0,100);
 
-			if (randomNum <= chance && spider.GetMoveBool() == false) // if gacha and not moving
+            if (randomNum <= chance) // if gacha
 			{
 				spider.PlayIdleAnim();
 			}
@@ -33,7 +33,7 @@ namespace Spider.BT
 			if (spider.spottedPlayer == true)
 				return TaskStatus.Failure;
 
-			return TaskStatus.Success;
+            return TaskStatus.Success;
 		}
 	}
 }

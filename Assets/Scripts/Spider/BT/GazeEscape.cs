@@ -30,7 +30,7 @@ namespace Spider.BT
 
             stuckTimer = 0f;
             isPaused = false;
-            stateTimer = 0.3f;
+            stateTimer = 0.5f;
 
             if (spider.IsGrabbed || spider.IsAttached) return;
 
@@ -77,7 +77,9 @@ namespace Spider.BT
                 return TaskStatus.Running;
 
             if (agent.remainingDistance < 0.1f)
+            {
                 return TaskStatus.Success;
+            }
 
             // Stop task if spider not moving like stuck
             if (agent.velocity.sqrMagnitude < movementThreshold * movementThreshold && !isPaused)
@@ -85,7 +87,9 @@ namespace Spider.BT
                 stuckTimer += Time.deltaTime;
 
                 if (stuckTimer >= 1f)
+                {
                     return TaskStatus.Success;
+                }
             }
             else
             {

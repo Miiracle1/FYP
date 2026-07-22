@@ -1,13 +1,17 @@
 using UnityEngine;
+using Animancer;
 
 public partial class SpiderAI
 {
     [Header("Animation")]
+    [SerializeField] private AnimancerComponent animancer;
     [SerializeField] private AnimationClip idleClip;
     [SerializeField] private AnimationClip movingClip;
 
     [Header("Sockets")]
     [SerializeField] private GameObject headSocket;
+
+    private AnimationClip currentClip; 
 
     /***************************************************************************************************************************************************************************************/
     //Public Methods
@@ -41,12 +45,37 @@ public partial class SpiderAI
 
     public void StopAllAnim()
     {
+        //ResetIdleTrigger();
         StopMove();
     }
 
-    public bool GetMoveBool()
+
+    public void ResetIdle()
+    { 
+        //ResetIdleTrigger();
+    }
+
+    public void Play(AnimationClip clip)
     {
-        return animator.GetBool("Move");
+        if (currentClip == clip )
+        {
+            return;
+        }
+
+        currentClip = clip;
+        animancer.Play(clip);
+    }
+
+    private void PlayOneShot(AnimationClip clip)
+    {
+        currentClip = null;
+
+        animancer.Play(clip);
+    }
+
+    public void ResetClip()
+    {
+        currentClip = null;
     }
 
     /***************************************************************************************************************************************************************************************/
@@ -54,18 +83,22 @@ public partial class SpiderAI
 
     private void PlayIdle()
     {
-        animator.SetTrigger("Idle");
-        animator.SetBool("Move", false);
+        PlayOneShot(idleClip);
     }
 
     private void PlayMove()
     {
-        animator.SetBool("Move", true);
+        Play(movingClip);
     }
 
     private void StopMove()
     {
-        animator.SetBool("Move", false);
+        PlayIdleAnim();
+    }
+
+    private void ResetIdleTrigger()
+    {
+        //animator.ResetTrigger("Idle");
     }
 
     /***************************************************************************************************************************************************************************************/

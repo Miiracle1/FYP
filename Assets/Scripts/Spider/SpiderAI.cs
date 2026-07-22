@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public partial class SpiderAI : MonoBehaviour
 {
     private NavMeshAgent agent;
-    public Animator animator;
+    private Rigidbody rb;
 
     public SpiderMode mode;
 
@@ -21,6 +21,7 @@ public partial class SpiderAI : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        rb = GetComponent<Rigidbody>();
 
         if (mode == SpiderMode.Game)
         {
@@ -39,15 +40,13 @@ public partial class SpiderAI : MonoBehaviour
             StartPhase1();
         }
 
-        defaultAnimationSpeed = animator.speed;
+        //defaultAnimationSpeed = animator.speed;
 
         
     }
 
     void Update()
     {
-        animator.SetBool("Move", agent.velocity.magnitude > 0.01f); // Constantly checking spider velocity to play move animation
-
         //CheckHandDistance();
 
         if (mode == SpiderMode.Lobby || InGamePhase2)
@@ -76,7 +75,7 @@ public partial class SpiderAI : MonoBehaviour
     private void OnAnimatorMove()
     {
         if (IsGrabbed || isAttached) return;
-
+        /*
         //let agent speed match animation
         if (animator.GetBool("Move"))
         {
@@ -86,14 +85,7 @@ public partial class SpiderAI : MonoBehaviour
         else
         { 
             animator.speed = defaultAnimationSpeed;
-        }
-    }
-
-    public Animator GetAnimatorReference()
-    {
-        if (!animator) return null;
-        
-        return animator;
+        }*/
     }
 
     public float GetDefaultAgentSpeed()

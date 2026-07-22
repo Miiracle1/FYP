@@ -21,7 +21,6 @@ namespace Spider.BT
 			var randomPoint = Random.Range(0, spider.SpiderPhase2Points.Length);
 			spider.SetCurrentTPPoint(spider.SpiderPhase2Points[randomPoint]);
 			teleportPoint = spider.SpiderPhase2Points[randomPoint].transform;
-
             agent.Warp(teleportPoint.position);
         }
 

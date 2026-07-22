@@ -27,7 +27,7 @@ public class HoldInteractDoor : MonoBehaviour
 
         if (timer >= earlyFadeTimer)
         { 
-            StartFadeEarly();
+           // StartFadeEarly();
         }
 
         if (timer >= holdDuration)

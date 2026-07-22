@@ -1185,6 +1185,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8102510222520285840, guid: 7e7e8596bd16f0349a9ce9f4b81aaa30, type: 3}
+      propertyPath: indicator
+      value: 
+      objectReference: {fileID: 8019134568281382735, guid: e9f1f2b2eda61a142a9338c748fb06ef, type: 3}
+    - target: {fileID: 8102510222520285840, guid: 7e7e8596bd16f0349a9ce9f4b81aaa30, type: 3}
       propertyPath: firstPanel
       value: 
       objectReference: {fileID: 1208463707}

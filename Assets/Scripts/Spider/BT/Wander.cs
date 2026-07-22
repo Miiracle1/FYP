@@ -24,13 +24,11 @@ namespace Spider.BT
         private bool isSprinting = false;
         private NavMeshAgent agent;
         private SpiderAI spider;
-        private Animator animator;
 
         public override void OnStart()
         {
             agent = GetComponent<NavMeshAgent>();
             spider = GetComponent<SpiderAI>();
-            animator = spider.GetAnimatorReference();
 
             if (spider.IsGrabbed || spider.IsAttached) return;
 
@@ -43,9 +41,7 @@ namespace Spider.BT
             {
                 isSprinting = true;
                 originalSpeed = agent.speed;
-                originalAnimatorSpeed = animator.speed;
                 agent.speed *= sprintSpeedRatio;
-                animator.speed *= sprintSpeedRatio;
             }
 
             spider.PlayMoveAnim();
@@ -66,6 +62,7 @@ namespace Spider.BT
 
             if (timer <= 0f || spider.IsGrabbed || spider.IsAttached)
             {
+                spider.StopMoveAnim();
                 return TaskStatus.Success;
             }
 
@@ -75,6 +72,7 @@ namespace Spider.BT
             // Make sure agent almost reach to end of path to continue branch
             if (agent.remainingDistance <= 0.1f)
             {
+                spider.StopMoveAnim();
                 return TaskStatus.Success;
             }
 
@@ -106,11 +104,9 @@ namespace Spider.BT
 
         public override void OnEnd()
         {
-            animator.speed = originalAnimatorSpeed;
             agent.speed = spider.GetDefaultAgentSpeed();
             isSprinting = false;
-            spider.StopMoveAnim();
-
+            
             if (agent.isOnNavMesh)
                 agent.isStopped = true;
         }
