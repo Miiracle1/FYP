@@ -3369,7 +3369,6 @@ GameObject:
   - component: {fileID: 387352537}
   - component: {fileID: 387352536}
   - component: {fileID: 387352535}
-  - component: {fileID: 387352534}
   m_Layer: 0
   m_Name: handle_1
   m_TagString: Untagged
@@ -3377,22 +3376,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
   m_IsActive: 1
---- !u!138 &387352534
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387352533}
-  serializedVersion: 1
-  m_ConnectedBody: {fileID: 1374493890}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!54 &387352535
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6127,6 +6110,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1226262503}
     m_Modifications:
     - target: {fileID: -8920191041847380490, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8920191041847380490, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 16
       objectReference: {fileID: 0}
@@ -6182,6 +6169,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3519333921987337029, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: -3485295733852906228, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -6190,10 +6181,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: new green house 2.0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3445951400310643137, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a9b8167d0e0210f4abff6316572fac81, type: 2}
+    - target: {fileID: 9068021269884633676, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9068021269884633676, guid: a469de1aac232ab45a0fb60ac507db2f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 16
@@ -14272,7 +14275,7 @@ HingeJoint:
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: -4.1327543
+    min: 0
     max: 177.39542
     bounciness: 0
     bounceMinVelocity: 0.2

@@ -170,6 +170,7 @@ MonoBehaviour:
   spottedPlayer: 0
   justEnteredPhase2: 0
   mode: 1
+  animator: {fileID: 5036952059022424144}
   animancer: {fileID: 2214161322652176700}
   idleClip: {fileID: 7400000, guid: 666753b3e2c53a644ad557afa7ed51bc, type: 2}
   movingClip: {fileID: 7400000, guid: f548bcfee23d79d4f8a49de7278b0ad4, type: 2}
