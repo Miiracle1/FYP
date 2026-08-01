@@ -23,11 +23,11 @@ namespace Spider.BT
 
             Vector3 destination = transform.position + (transform.forward) * escapeDistance;
 
-            spider.ResetIdle();
+            
             agent.isStopped = false;
             agent.SetDestination(destination);
-            spider.PlayMoveAnim();
             agent.speed *= 2f;
+            spider.PlayMoveAnim();
         }
 
         public override TaskStatus OnUpdate()
@@ -35,10 +35,13 @@ namespace Spider.BT
             if (agent.pathPending)
                 return TaskStatus.Running;
 
+            var state = spider.animancer.States.Current;
+            state.Speed = 2f;
+
             if (agent.remainingDistance <= 0.01f)
             {
+                state.Speed = 1f;
                 spider.SetPhase2();
-                spider.StopMoveAnim();
                 return TaskStatus.Success;
             }
 

@@ -55,10 +55,15 @@ public partial class SpiderAI : MonoBehaviour
             UpdateGaze();
         }
 
-        float currentSpeed = agent.speed;
+        float currentSpeed = agent.velocity.magnitude;
         animator.SetFloat("Speed", currentSpeed);
+        if (currentSpeed >= 0.08f && !specialMove)
+            PlayMoveAnim();
 
+        if (currentSpeed < 0.08f)
+            StopMove();
 
+        RandomIdle();
     }
 
     private void OnEnable()

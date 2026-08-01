@@ -34,6 +34,7 @@ namespace Spider.BT
         public override void OnEnd()
         {
             spider.EnterPhase2();
+			spider.StopAllAnim();
         }
 	}
 }

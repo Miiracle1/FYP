@@ -21,7 +21,7 @@ namespace Spider.BT
 
             targetRotation = transform.rotation * Quaternion.Euler(0f, 180f, 0f);
 
-            spider.ResetIdle();
+            spider.SpecialMove = true;
             spider.PlayMoveAnim();
         }
 
@@ -31,7 +31,7 @@ namespace Spider.BT
 
             if (Quaternion.Angle(transform.rotation, targetRotation) < 1f)
             {
-                spider.StopMoveAnim();
+                spider.SpecialMove = false;
                 return TaskStatus.Success;
             }
 

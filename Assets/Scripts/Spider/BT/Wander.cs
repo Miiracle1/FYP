@@ -44,7 +44,7 @@ namespace Spider.BT
                 agent.speed *= sprintSpeedRatio;
             }
 
-            spider.PlayMoveAnim();
+            //spider.PlayMoveAnim();
 
             timer = Mathf.RoundToInt(Random.Range(0, maxMoveTime));
             if (timer == 0) timer += 1f; // if somehow timer is 0, fallback to 1 second
@@ -62,7 +62,7 @@ namespace Spider.BT
 
             if (timer <= 0f || spider.IsGrabbed || spider.IsAttached)
             {
-                spider.StopMoveAnim();
+                //spider.StopMoveAnim();
                 return TaskStatus.Success;
             }
 
@@ -72,7 +72,7 @@ namespace Spider.BT
             // Make sure agent almost reach to end of path to continue branch
             if (agent.remainingDistance <= 0.1f)
             {
-                spider.StopMoveAnim();
+                //spider.StopMoveAnim();
                 return TaskStatus.Success;
             }
 

@@ -46,7 +46,7 @@ namespace Spider.BT
             else
                 agent.SetDestination(targetPosition);
 
-            spider.PlayMoveAnim();
+            //spider.PlayMoveAnim();
         }
 
         public override TaskStatus OnUpdate()
@@ -62,13 +62,12 @@ namespace Spider.BT
                 if (isPaused)
                 {
                     agent.isStopped = false;
-                    spider.PlayMoveAnim();
+                    //spider.PlayMoveAnim();
                     stateTimer = Random.Range(runTimeRange.x, runTimeRange.y);
                 }
                 else
                 {
                     agent.isStopped = true;
-                    spider.StopMoveAnim();
                     stateTimer = Random.Range(pauseTimeRange.x, pauseTimeRange.y);
                 }
             }
@@ -101,9 +100,7 @@ namespace Spider.BT
 
         public override void OnEnd()
         {
-            spider.StopMoveAnim();
             agent.speed = spider.GetDefaultAgentSpeed();
-
             if (agent.isOnNavMesh)
                 agent.isStopped = true;
         }

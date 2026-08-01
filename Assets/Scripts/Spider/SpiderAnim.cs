@@ -1,17 +1,29 @@
 using UnityEngine;
 using Animancer;
+using System.Collections;
 
 public partial class SpiderAI
 {
     [Header("Animation")]
-    [SerializeField] private AnimancerComponent animancer;
+    public AnimancerComponent animancer;
     [SerializeField] private AnimationClip idleClip;
     [SerializeField] private AnimationClip movingClip;
 
     [Header("Sockets")]
     [SerializeField] private GameObject headSocket;
 
-    private AnimationClip currentClip; 
+    [Header("Idle")]
+    [SerializeField] private float idleCheckInterval = 1f;
+    [SerializeField] private float idleChance = 20f;
+
+    private AnimationClip currentClip;
+    private float nextIdleCheckTime;
+    private bool specialMove = false;
+    public bool SpecialMove
+    {
+        get { return specialMove; }
+        set { specialMove = value; }
+    }
 
     /***************************************************************************************************************************************************************************************/
     //Public Methods
@@ -57,10 +69,7 @@ public partial class SpiderAI
 
     public void Play(AnimationClip clip)
     {
-        if (currentClip == clip )
-        {
-            return;
-        }
+        if (currentClip == clip) return;
 
         currentClip = clip;
         animancer.Play(clip);
@@ -68,7 +77,7 @@ public partial class SpiderAI
 
     private void PlayOneShot(AnimationClip clip)
     {
-        currentClip = null;
+        currentClip = clip;
 
         animancer.Play(clip);
     }
@@ -93,7 +102,11 @@ public partial class SpiderAI
 
     private void StopMove()
     {
-        PlayIdleAnim();
+        if (animancer.States.Current?.Clip == movingClip)
+        {
+            currentClip = null;
+            animancer.Stop(movingClip);
+        }
     }
 
     private void ResetIdleTrigger()
@@ -108,4 +121,39 @@ public partial class SpiderAI
     {
         return headSocket;
     }
+
+    /***************************************************************************************************************************************************************************************/
+    //Random Idle
+
+    /// <summary>
+    /// Put in Update.
+    /// </summary>
+    private void RandomIdle()
+    {
+        var cantIdle = agent.velocity.magnitude > 0.1f;
+
+        if (cantIdle) return;
+
+        if (Time.time < nextIdleCheckTime) return;
+
+        nextIdleCheckTime = Time.time + idleCheckInterval;
+
+        if (Random.Range(0f, 100f) <= idleChance)
+        {
+            animator.ResetTrigger("UnIdle");
+            PlayOneShot(idleClip);
+            if (float.TryParse(idleClip.length.ToString(), out var result))
+                StartCoroutine(IdleWait(result));
+            Debug.Log("actual wait time " + result);
+        }
+    }
+
+    private IEnumerator IdleWait(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        animancer.Stop(idleClip);
+        animator.SetTrigger("UnIdle");
+    }
+
 }
