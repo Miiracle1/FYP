@@ -54,6 +54,8 @@ public class LobbyManager : MonoBehaviour
         if (PlayerPrefs.GetString("Got Spider") == "True" && lobbySpider != null && spawnArea != null)
         {
             Debug.Log("Should spawn spider");
+            StartNarrator.instance.PlaySound(NarratorSounds.finishLobby);
+
             greenhouseDoor.SetActive(true);
             greenhouseUI.SetActive(true);
             Instantiate(lobbySpider, spawnArea.transform.position, Quaternion.identity);

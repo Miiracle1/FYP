@@ -46,6 +46,12 @@ public class GameManager : MonoBehaviour
         Phase2Points = FindObjectsByType<Phase2Points>(FindObjectsSortMode.None);
 
         SceneLoader.instance.ForceReset();
+
+        if (GameProgressTracker.Scene == SceneEnums.Garage)
+            StartNarrator.instance.PlaySound(NarratorSounds.garageTutorial);
+
+        if (GameProgressTracker.Scene == SceneEnums.Greenhouse)
+            StartNarrator.instance.PlaySound(NarratorSounds.greenhouseTutorial);
     }
 
     private void OnEnable()
@@ -110,6 +116,11 @@ public class GameManager : MonoBehaviour
             GameProgressTracker.Scene = SceneEnums.Greenhouse;
             SceneLoader.instance.LoadScene("GreenHouse");
             return;
+        }
+
+        if (GameProgressTracker.Scene == SceneEnums.Greenhouse)
+        {
+            StartNarrator.instance.PlaySound(NarratorSounds.greenhouseEnd);
         }
 
         GameProgressTracker.Scene = SceneEnums.Lobby;

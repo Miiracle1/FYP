@@ -41,6 +41,8 @@ namespace Spider.BT
 
 				spider.spottedPlayer = true;
 
+				StartNarrator.instance.PlaySound(NarratorSounds.garageFoundSpider); //Play found spider sfx
+
 				return TaskStatus.Success;
             }
 

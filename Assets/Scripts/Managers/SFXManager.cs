@@ -32,7 +32,7 @@ public class SFXManager : MonoBehaviour
 
         instance.audioSource.Play();
 
-        //float clipLength = instance.audioSource.clip.length;
+        //float clipLength = instance.audioSource.lobbyStartSFX.length;
     }
 
     public void PlayClipAtTransform(AudioClip clip, Transform targetTransform, float volume = 1.0f)

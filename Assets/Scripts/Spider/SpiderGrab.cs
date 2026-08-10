@@ -69,6 +69,11 @@ public class SpiderGrab : MonoBehaviour
         agent.enabled = false;
         spider.SetGrabbed(true);
         player.IsGrabbingSpider = true;
+
+        if (PlayerPrefs.GetString("Tutorial") == "True" && GameProgressTracker.Scene == SceneEnums.Garage)
+        {
+            StartNarrator.instance.PlaySound(NarratorSounds.garageCaughtSpider);
+        }
     }
 
     public void Release(SelectExitEventArgs args)

@@ -14,7 +14,7 @@ public partial class SpiderAI
     // SFX Methods
 
     /// <summary>
-    /// Plays scared clip at spider transform.
+    /// Plays scared lobbyStartSFX at spider transform.
     /// </summary>
     public void PlayScaredClip()
     {
@@ -24,7 +24,7 @@ public partial class SpiderAI
     }
 
     /// <summary>
-    /// Plays move clip at spider transform.
+    /// Plays move lobbyStartSFX at spider transform.
     /// </summary>
     public void PlayMoveClip()
     { 
