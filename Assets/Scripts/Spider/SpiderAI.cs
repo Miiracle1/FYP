@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 /// <summary>
 /// Parent Class of Spider AI
@@ -10,6 +11,7 @@ public partial class SpiderAI : MonoBehaviour
     private Rigidbody rb;
 
     public SpiderMode mode;
+    public XRGrabInteractable xRGrabInteractable;
 
     private float defaultAgentMoveSpeed;
     private float moveAnimationSpeed;
@@ -43,7 +45,8 @@ public partial class SpiderAI : MonoBehaviour
 
         //defaultAnimationSpeed = animator.speed;
 
-        
+        if (mode == SpiderMode.Game)
+            xRGrabInteractable.enabled = false;
     }
 
     void Update()
@@ -102,6 +105,11 @@ public partial class SpiderAI : MonoBehaviour
     public float GetDefaultAgentSpeed()
     { 
         return defaultAgentMoveSpeed;
+    }
+
+    public void EnableGrab()
+    { 
+        xRGrabInteractable.enabled = true;
     }
 }
 

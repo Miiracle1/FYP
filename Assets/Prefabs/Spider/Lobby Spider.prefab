@@ -334,6 +334,7 @@ MonoBehaviour:
   spottedPlayer: 0
   justEnteredPhase2: 0
   mode: 0
+  xRGrabInteractable: {fileID: 1084641242601111288}
   animator: {fileID: 439021191656140509}
   animancer: {fileID: 6381239148328842985}
   idleClip: {fileID: 7400000, guid: 666753b3e2c53a644ad557afa7ed51bc, type: 2}

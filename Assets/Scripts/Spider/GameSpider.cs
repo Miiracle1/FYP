@@ -52,6 +52,8 @@ public partial class SpiderAI
         justEnteredPhase2 = false;
         phase2 = true;
         OnPhase2Start?.Invoke();
+
+        EnableGrab();
     }
 
     public void SetEndPhase2()

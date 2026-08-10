@@ -171,6 +171,7 @@ MonoBehaviour:
   spottedPlayer: 0
   justEnteredPhase2: 0
   mode: 1
+  xRGrabInteractable: {fileID: 7701254863723723700}
   animator: {fileID: 5036952059022424144}
   animancer: {fileID: 2214161322652176700}
   idleClip: {fileID: 7400000, guid: 666753b3e2c53a644ad557afa7ed51bc, type: 2}
@@ -210,7 +211,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278774557279309012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 

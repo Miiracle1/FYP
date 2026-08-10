@@ -28,7 +28,6 @@ public class StartNarrator : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        PlayNarrator();
     }
 
     /// <summary>
@@ -61,7 +60,6 @@ public class StartNarrator : MonoBehaviour
             case NarratorSounds.garageTutorial:
                 currentClip = LoadSoundClip("garage tutorial");
                 break;
-
             case NarratorSounds.garageFoundSpider:
                 currentClip = LoadSoundClip("garage found spider");
                 break;
@@ -77,7 +75,9 @@ public class StartNarrator : MonoBehaviour
             case NarratorSounds.finishLobby:
                 currentClip = LoadSoundClip("lobby after green house");
                 break;
+
             default:
+                currentClip = LoadSoundClip("garage tutorial");
                 break;
         }
 

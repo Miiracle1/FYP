@@ -118,11 +118,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if (GameProgressTracker.Scene == SceneEnums.Greenhouse)
-        {
-            StartNarrator.instance.PlaySound(NarratorSounds.greenhouseEnd);
-        }
-
+        GameProgressTracker.ModeState = Mod.Done;
         GameProgressTracker.Scene = SceneEnums.Lobby;
 
         SceneLoader.instance.LoadScene("Lobby");

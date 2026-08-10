@@ -17,6 +17,7 @@ public class SpiderGrab : MonoBehaviour
     private SpiderAttachPoint currentAttachPoint;
     private Player player;
     private Quaternion originalRotation;
+    private bool grabSound;
 
     /***************************************************************************************************************************************************************************************/
     //Unity Methods
@@ -28,6 +29,7 @@ public class SpiderGrab : MonoBehaviour
 
         player = FindAnyObjectByType<Player>();
         snapTurnProvider = player.GetComponentInChildren<SnapTurnProvider>();
+        grabSound = true;
     }
 
     private void Update()
@@ -70,9 +72,16 @@ public class SpiderGrab : MonoBehaviour
         spider.SetGrabbed(true);
         player.IsGrabbingSpider = true;
 
-        if (PlayerPrefs.GetString("Tutorial") == "True" && GameProgressTracker.Scene == SceneEnums.Garage)
+        if (GameProgressTracker.Scene == SceneEnums.Garage && grabSound) //PlayerPrefs.GetString("Tutorial") == "True" && 
         {
             StartNarrator.instance.PlaySound(NarratorSounds.garageCaughtSpider);
+            grabSound = false;
+        }
+
+        if (GameProgressTracker.Scene == SceneEnums.Greenhouse && grabSound)
+        {
+            StartNarrator.instance.PlaySound(NarratorSounds.greenhouseEnd);
+            grabSound = false;
         }
     }
 

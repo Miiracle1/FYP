@@ -5,8 +5,21 @@ using UnityEngine;
 /// </summary>
 public class DevCheat : MonoBehaviour
 {
+    public static DevCheat Instance;
+
     [Header("Cheats")]
     [SerializeField] private bool reset = false;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+            Destroy(gameObject);
+    }
 
     private void Start()
     {
