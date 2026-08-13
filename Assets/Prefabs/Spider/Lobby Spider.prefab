@@ -343,16 +343,12 @@ MonoBehaviour:
   idleCheckInterval: 1
   idleChance: 20
   audioSource: {fileID: 2623773270108244458}
-  idleAudioClip: {fileID: 0}
   idleAudioChance: 40
   escapeAmount: 1
   requiredLookTime: 0.5
   maxDistance: 4
   eyeAngleThreshold: 50
   handTrackDistance: 0
-  idleSFXClip: {fileID: 0}
-  scaredSFXClip: {fileID: 0}
-  moveSFXClip: {fileID: 0}
 --- !u!65 &2554797286877049318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -592,7 +588,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -655,7 +651,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

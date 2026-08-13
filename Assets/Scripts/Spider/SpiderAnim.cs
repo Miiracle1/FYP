@@ -79,6 +79,8 @@ public partial class SpiderAI
     {
         currentClip = clip;
 
+        RandomIdleAudio();
+
         animancer.Play(clip);
     }
 
