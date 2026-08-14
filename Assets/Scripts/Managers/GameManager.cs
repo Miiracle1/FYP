@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        ShowUI();
+
         if (dynamicMoveProvider != null) 
             dynamicMoveProvider.enabled = false;
 
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
 
         SceneLoader.instance.ForceReset();
 
+        Debug.Log("current scene is " + GameProgressTracker.Scene);
         if (GameProgressTracker.Scene == SceneEnums.Garage)
             StartNarrator.instance.PlaySound(NarratorSounds.garageTutorial);
 
@@ -56,12 +59,12 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        FadeCanvas.OnFinishFadeIn += ShowUI;
+        //FadeCanvas.OnFinishFadeIn += ShowUI;
         SpiderAI.OnPhase2Start += ShowIndicator;
     }
     private void OnDisable()
     {
-        FadeCanvas.OnFinishFadeIn -= ShowUI;
+        //FadeCanvas.OnFinishFadeIn -= ShowUI;
         SpiderAI.OnPhase2Start -= ShowIndicator;
     }
 

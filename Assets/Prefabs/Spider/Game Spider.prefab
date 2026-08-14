@@ -186,9 +186,6 @@ MonoBehaviour:
   maxDistance: 4
   eyeAngleThreshold: 50
   handTrackDistance: 0
-  idleSFXClip: {fileID: 0}
-  scaredSFXClip: {fileID: 0}
-  moveSFXClip: {fileID: 0}
 --- !u!114 &177307538934505341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,7 +476,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 21
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

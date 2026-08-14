@@ -88,6 +88,8 @@ public class StartNarrator : MonoBehaviour
     {
         AudioClip explosionClip = Resources.Load<AudioClip>("Audio/" + clipName);
 
+        Debug.Log("Audio Loaded from Audio/" + clipName);
+
         return explosionClip;
     }
 }
